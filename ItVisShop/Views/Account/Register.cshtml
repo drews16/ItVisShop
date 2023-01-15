@@ -1,0 +1,33 @@
+﻿<div class="account-register-modal">
+    <div class="modal__register__content">
+        <h2 class="h2">Регистрация</h2>
+        <form method="post" asp-controller="Account" asp-action="Register">
+            <div class="modal__content__name">
+                <label>Имя</label>
+                <input type="text" name="Name" />
+            </div>
+            <div class="modal__content__surname">
+                <label>Фамилия</label>
+                <input type="text" name="Surname" />
+            </div>
+            <div class="modal__content__email">
+                <label>Email</label>
+                <input type="text" name="Email" />
+            </div>
+            <div class="modal__content__phone">
+                <label>Номер телефона</label>
+                <input type="text" name="Phone" />
+            </div>
+            <div class="modal__content__password">
+                <label>Пароль</label>
+                <input type="password" name="Password" />
+            </div>
+            <div class="modal__content__password">
+                <label>Подтвердите пароль</label>
+                <input type="password" name="PasswordConfirm" />
+            </div>
+            <input type="submit" value="Зарегистрироваться" class="modal__btn" />
+            <div asp-validation-summary="All"></div>
+        </form>
+    </div>
+</div>

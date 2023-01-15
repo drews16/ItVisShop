@@ -1,0 +1,120 @@
+﻿@model IEnumerable<Product>
+@{
+    ViewData["Title"] = "Главная";
+}
+
+<div class="swiper home-swiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide home_slider_container">
+            <div class="home_slider_background" style="background-image: url(../img/home/slider/home_slider_1.jpg)"></div>
+            <div class="home_slider_content_container">
+                <div class="container">
+                    <div class="home_slider_content">
+                        <div class="home_slider_title">Мы запустились!</div>
+                        <div class="home_slider_subtitle">Попробуй заказть у нас и почувствуй мощь.</div>
+                        <div class="home_button"><a asp-controller="Product" asp-action="Products" asp-route-category="Смартфон">За покупками</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide home_slider_container">
+            <div class="home_slider_background" style="background-image: url(../img/home/slider/home_slider_3.jpg)"></div>
+            <div class="home_slider_content_container">
+                <div class="container">
+                    <div class="home_slider_content">
+                        <div class="home_slider_title">Совершенно новый!</div>
+                        <div class="home_slider_subtitle">Только лучшие гаджеты.</div>
+                        <div class="home_button"><a asp-controller="Product" asp-action="Products" asp-route-category="Смартфон">За покупками</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-button-prev home-swiper-button-prev"></div>
+    <div class="swiper-button-next home-swiper-button-next"></div>
+</div>
+
+<div class="ads_container">
+    <div class="ads_small">
+        <div class="ads_background" style="background-image:url(../img/home/avds_small.jpg);"></div>
+        <div class="ads_small_inner">
+            <div class="ads_small_content">
+                <div class="ads_title">Смартфоны</div>
+                <div class="ads_link"><a asp-controller="Product" asp-action="Products" asp-route-category="Смартфон">Перейти</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ads_large">
+        <div class="ads_background" style="background-image:url(../img/home/avds_large.jpg);"></div>
+        <div class="ads_large_inner">
+            <div class="ads_large_content">
+                <div class="ads_title">Аксессуары</div>
+                <div class="ads_large_text">
+                    Самые лучшие и надежные аксуссуары только у нас!
+                </div>
+                <div class="ads_link"><a asp-controller="#" asp-action="#">Перейти</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@{
+    await Html.RenderPartialAsync("_TopProducts", Model);
+}
+
+<div class="ads_xl">
+    <div class="container">
+        <div class="ads_xl_container">
+            <div class="ads_xl_background" style="background-image:url(../img/home/avds_xl.jpg);"></div>
+            <div class="ads_xl_content">
+                <div class="ads_title">Нереальные гаджеты</div>
+                <div class="ads_link"><a asp-controller="#" asp-action="#">Перейти</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="icon-boxes">
+    <div class="container">
+        <div class="icon-boxes-container">
+            <div class="icon-box">
+                <div class="icon-box__image"><img src="~/img/home/icon_1.svg" /></div>
+                    <div class="icon-box__title">Бесплатная доставка</div>
+                    <div class="icon-box__text">Бесплатно доставим ваш товар по всей России</div>
+            </div>            
+            <div class="icon-box">
+                <div class="icon-box__image"><img src="~/img/home/icon_2.svg" /></div>
+                    <div class="icon-box__title">Бесплатный возврат</div>
+                    <div class="icon-box__text">Верните товар, если товар не подошел</div>
+            </div>
+            <div class="icon-box">
+                <div class="icon-box__image"><img src="~/img/home/icon_3.svg" /></div>
+                    <div class="icon-box__title">Поддержка 24/7</div>
+                    <div class="icon-box__text">Остались вопросы? Мы ответим вам в любое время</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="newsletter">
+    <div class="container">
+        <div class="newsletter__border"></div>
+        <div class="newsletter__content">
+            <div class="newsletter__content__title">
+                Подписывайтесь на наши рассылки
+            </div>
+            <div class="newsletter__content__text">
+                Подпишитесь на рассылки, чтобы узнавать об акция первым
+            </div>
+            <div class="newsletter__content__form">
+                <form method="post">
+                    <input class="newsletter__input" type="email" />
+                    <button class="newsletter__button" type="submit">Подписаться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,77 @@
+﻿<div class="product_details">
+    <div class="container">
+        <div class="details_container">
+            <div class="swiper details_swiper details_swiper_position">
+                <div class="swiper-wrapper">
+                    @foreach (var img in Model.ProductImages)
+                    {
+                        <div class="swiper-slide"><img src="@img.ImagePath" /></div>
+                    }
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="details_content">
+                <div class="details_title">@Model.Product.ProductType.ProductTypeName @Model.Product.Brand.BrandName @Model.Product.Model</div>    
+                <div class="details_price">@Model.Product.Price.ToString("c")</div>
+                <div class="product_quantity_container">                      
+                    <input class="quantity_input" type="number" min="1" pattern="[0-9]" value="1"/>
+                    <button class="add_cart_button" asp-controller="#" asp-action="#">В корзину</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="details-tabs-container">
+                <div class="tab-head">
+            <div class="tab-head__item active">О товаре</div>
+            <div class="tab-head__item">Характеристики</div>
+        </div>
+        <div class="tab-content">
+            <div class="tab-content__item active">
+                <div class="description-container">
+                    <div class="description__content">
+                        @Model.Product.Description
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content__item">
+                @foreach (var prop in Model.ProductProperties)
+                {
+                    <div class="specification">
+                        <div class="specification__name">@prop.DisplayName</div>
+                        <div class="specification__value__container">
+                            <div class="specification__value">@prop.Value </div>
+                            <div class="specification__eng-unit"> @prop.EngUnit</div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="newsletter">
+    <div class="container">
+        <div class="newsletter__border"></div>
+        <div class="newsletter__content">
+            <div class="newsletter__content__title">
+                Подписывайтесь на наши рассылки
+            </div>
+            <div class="newsletter__content__text">
+                Подпишитесь на рассылки, чтобы узнавать об акция первым
+            </div>
+            <div class="newsletter__content__form">
+                <form method="post">
+                    <input class="newsletter__input" type="email" />
+                    <button class="newsletter__button" type="submit">Подписаться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

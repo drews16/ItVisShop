@@ -1,0 +1,23 @@
+﻿<div class="products">
+    <div class="container">
+        <div class="products-container">
+            @{
+                foreach (var item in Model)
+                {
+                    <div class="product">
+                        <div class="product__image">
+                            <img src="@item.MainImage">
+                        </div>
+                        <div class="product__sale"><span>Hot</span></div>
+                        <div class="product__content">
+                            <div class="product__title">
+                                <a asp-controller="Product" asp-action="Details" asp-route-id="@item.ProductId">@item.Brand.BrandName @item.Model</a>
+                            </div>
+                            <div class="product__price">@item.Price.ToString("c")</div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "t306sxa08OuoU8dabHAbi85QZ/NXPtq6fTQpifjFYeydVo+A+SD4aAxRDj220kExm6KtPYNpyYXMQfA6F5R16Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop.Domain\\ItVisShop.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Андрей\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.9\\microsoft.entityframeworkcore.abstractions.6.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}
