@@ -1,0 +1,19 @@
+﻿<div class="account-login">
+    <div class="modal__login__content">
+        <h2 class="h2">Вход</h2>
+        <form method="post" asp-controller="Account" asp-action="Login">
+            <div class="modal__content__phone">
+                <label>Email</label>
+                <input type="text" name="Email"/>
+            </div>
+            <div class="modal__content__password">
+                <label>Пароль</label>
+                <input type="password" name="Password" />
+            </div>
+            <input type="submit" value="Войти" class="modal__btn" />
+            <div>Нет аккаунта?<a asp-controller="Account" asp-action="Register"> Регистрация</a></div>
+            <div asp-validation-summary="All"></div>
+        </form>
+    </div>
+</div>
+

@@ -21,7 +21,7 @@ namespace ItVisShop.Controllers
 
 
         [HttpGet]
-        public IActionResult Login() => View("/Views/Account/_Login.cshtml");
+        public IActionResult Login() => View("/Views/Account/Login.cshtml");
         [HttpGet]
         public IActionResult Register() => View("/Views/Account/Register.cshtml");
 
@@ -65,7 +65,7 @@ namespace ItVisShop.Controllers
                 ModelState.AddModelError("", response.Description);
             }
 
-            return View("/Views/Account/_Login.cshtml", model);
+            return View("/Views/Account/Login.cshtml", model);
         }
 
         // Ввыхода из аккаунта.

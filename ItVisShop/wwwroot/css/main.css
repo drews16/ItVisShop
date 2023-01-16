@@ -247,7 +247,7 @@ a:active {
 
 /* Modal. */
 
-.account-modal {
+/*.account-modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -258,30 +258,31 @@ a:active {
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 100;
-}
+}*/
 
-.account-register-modal {
+.account-register-modal,
+.account-login {
     display: flex;
     justify-content: center;
 }
 
-.modal__close {
+/*.modal__close {
     color: grey;
     float: right;
     font-size: 28px;
     font-weight: 600;
-}   
+} */  
 
-.modal__close:hover {
+/*.modal__close:hover {
     color: black;
     cursor: pointer;
-}
+}*/
 
-.modal__active {
+/*.modal__active {
     display: block;
-}
+}*/
 
-.modal__content {
+/*.modal__content {
     display: flex;
     flex-direction: column;
     background: white;
@@ -290,9 +291,10 @@ a:active {
     border: 1px solid grey;
     margin: 15% auto;
     box-shadow: 0 4px 8px 0 black;
-}
+}*/
 
-.modal__register__content {
+.modal__register__content,
+.modal__login__content {
     display: flex;
     flex-direction: column;
     background: white;

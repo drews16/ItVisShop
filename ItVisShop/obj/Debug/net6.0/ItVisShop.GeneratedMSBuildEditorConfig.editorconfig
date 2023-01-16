@@ -15,12 +15,12 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Андрей/source/repos/C\#/ItVisShop/ItVisShop/Views/Account/Register.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+[C:/Users/Андрей/source/repos/C\#/ItVisShop/ItVisShop/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Андрей/source/repos/C\#/ItVisShop/ItVisShop/Views/Account/_Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxfTG9naW4uY3NodG1s
+[C:/Users/Андрей/source/repos/C\#/ItVisShop/ItVisShop/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Андрей/source/repos/C\#/ItVisShop/ItVisShop/Views/Home/Index.cshtml]

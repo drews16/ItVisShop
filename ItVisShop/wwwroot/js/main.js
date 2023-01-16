@@ -1,25 +1,25 @@
-﻿const account = document.getElementById("account");
-const loginModal = document.getElementById("account-modal");
-const closeModalBtn = document.querySelector(".modal__close");
+﻿//const account = document.getElementById("account");
+//const loginModal = document.getElementById("account-modal");
+//const closeModalBtn = document.querySelector(".modal__close");
 
-account.onclick = () => {
-    loginModal.classList.add("modal__active");
+//account.onclick = () => {
+//    loginModal.classList.add("modal__active");
 
-    closeModalBtn.addEventListener("click", closeLoginModal);
-    loginModal.addEventListener("click", hideLoginModal);
+//    closeModalBtn.addEventListener("click", closeLoginModal);
+//    loginModal.addEventListener("click", hideLoginModal);
 
-    function closeLoginModal() {
-        loginModal.classList.remove("modal__active")
-        closeModalBtn.removeEventListener("click", closeLoginModal);
-        loginModal.removeEventListener("click", hideLoginModal);
-    }
+//    function closeLoginModal() {
+//        loginModal.classList.remove("modal__active")
+//        closeModalBtn.removeEventListener("click", closeLoginModal);
+//        loginModal.removeEventListener("click", hideLoginModal);
+//    }
         
-    function hideLoginModal(event) {
-        if (event.target === loginModal) {
-            closeLoginModal();
-        }
-    }
-};
+//    function hideLoginModal(event) {
+//        if (event.target === loginModal) {
+//            closeLoginModal();
+//        }
+//    }
+//};
 
 function showSearchPanel() {
     document.querySelector(".search-panel").classList.toggle("show");
