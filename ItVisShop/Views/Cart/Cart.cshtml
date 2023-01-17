@@ -1,0 +1,56 @@
+﻿<div class="cart-container">
+    <div class="container">
+        <div class="cart__columns">
+            <div class="cart__column__product">Продукт</div>
+            <div class="cart__column__price">Цена</div>
+            <div class="cart__column__quantity">Количество</div>
+            <div class="cart__column__total">Итог</div>
+        </div>
+
+        <div class="cart-items">
+            <div class="cart-item">
+                <div class="cart-item__product">
+                    <div class="cart-item__image">
+                        <img src="~/img/Products/smartphones/s22_1.webp">
+                    </div>
+                    <div class="cart-item__name">
+                        <a asp-controller="" asp-action="">Samsung Galaxy S22</a>
+                        <div class="cart-item__panel">
+                            <div class="panel__action">
+                                <a asp-controller="" asp-action="">Удалить</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cart-item__price"></div>
+                <div class="cart-item__quantity">
+                    <div class="product__quantity">
+                        <input class="quantity__input" type="number" value="1" min="1" /> @*Передать value*@
+                    </div>
+                </div>
+                <div class="cart-item__total"></div>
+            </div>
+        </div>
+
+        <div class="cart-info">
+            <div class="cart-info__title">Итог</div>
+            <div class="cart__total__container">
+                <ul>
+                    <li class="cart__total__item">
+                        <div class="cart__total__title">Товаров в корзине</div>
+                        <div class="cart__total__value"></div>
+                    </li>                                
+                    <li class="cart__total__item">
+                        <div class="cart__total__title">К оплате</div>
+                        <div class="cart__total__value"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="cart-buttons">
+                <div class="clear__cart__button"><a asp-controller="" asp-action="">Очистить корзину</a></div>
+                <div class="place__order__button"><a asp-controller="" asp-action="">Оформить заказ</a></div>
+            </div>
+        </div>
+    </div>
+</div>

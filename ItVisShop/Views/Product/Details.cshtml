@@ -19,7 +19,7 @@
                 <div class="details_title">@Model.Product.ProductType.ProductTypeName @Model.Product.Brand.BrandName @Model.Product.Model</div>    
                 <div class="details_price">@Model.Product.Price.ToString("c")</div>
                 <div class="product_quantity_container">                      
-                    <input class="quantity_input" type="number" min="1" pattern="[0-9]" value="1"/>
+                    <input class="quantity__input" type="number" min="1" pattern="[0-9]" value="1"/>
                     <button class="add_cart_button" asp-controller="#" asp-action="#">В корзину</button>
                 </div>
             </div>
