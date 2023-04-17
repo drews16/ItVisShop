@@ -1,0 +1,62 @@
+﻿@if(User.IsInRole("Admin"))
+{
+    <form method="post" enctype="multipart/form-data" asp-controller="Admin" asp-action="CreateProduct" >
+    <div class="container">
+        <div class="add-product-container">
+             <div class="add-product-content">
+                <h2>Создание продукта</h2>
+                <input type="hidden" value="@Model.ProductTypeId" name="ProductTypeId" />
+                <div class="add-product__brand">
+                    <label>Брэнд</label>
+                    <select name="BrandId" required>
+                        @foreach (var item in Model.Brands)
+                        {
+                            <option value="@item.BrandId">@item.BrandName</option>
+                        }
+                    </select>
+                </div>
+                <div class="add-product__model">
+                    <label>Модель</label>
+                    <input placeholder="Модель" type="text" name="Model" required />
+                </div>
+                <div class="add-product__price">
+                    <label>Цена</label>
+                    <input placeholder="Цена" type="text" name="Price" required />
+                </div>
+                <div class="add-product__main-image">
+                    <label>Главная картинка</label>
+                    <input type="file" name="mainImage" required />
+                </div>
+                <div class="add-product__images">
+                 <label>Фото товара (Вместе с главным)</label>
+                 <input type="file" name="images" multiple required />
+                </div>
+                <div class="add-product__description">
+                    <label>Описание товара</label>
+                    <textarea type="text" name="Description" required></textarea>
+                </div>
+                <div class="add-product__available-quantity">
+                    <lable>Количество</lable>
+                    <input type="number" min="1" max="99999" name="AvailableQuantity" />
+                </div>
+                <div class="add-product-property-content">
+                    @{
+                        int i = 0;
+                        foreach (var item in Model.ProductPropertyTypes)
+                        {
+                            <div class="add-product__property">
+                                <input type="hidden" value="@item.ProductPropertyTypeId" name="Properties[@i].Id" />
+                                <label>@item.DisplayName (@item.EngUnit)</label>
+                                <input type="text" name="Properties[@i].Value" required />
+                            </div>
+                            i++;
+                        }
+                      }
+                </div>
+                <input class="add-product__btn" type="submit" value="Создать" />
+             </div>
+        </div>
+        <div asp-validation-summary="All"></div>
+    </div>
+</form>
+}

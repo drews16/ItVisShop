@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQ891Vxmiu0i+3iKp+gY6qgAAAAACAAAAAAAQZgAAAAEAACAAAAAGnmPg9QImsDYjOmf9WUjFgcSw2m+qKjLnNZ1y6ugCuAAAAAAOgAAAAAIAACAAAAA6o36hoeB6mMmbgDwStugcjiMMN55lOKVt6yL42Oc9ZiAAAACPMTNadRBHjqH2iCiQpf39h3LnV2aLMPHwjghwnUiHwUAAAACo3elZjjKoyi3G1fEfJ/oVHFBHKVT2zU5hK0J0vhEMjBlQ7b+kVLrHFW82pdSUln0dqcLuUwSu/t2LSjuYvWDZ</EncryptedPassword>
+    <_PublishTargetUrl>ftp://win5225.site4now.net</_PublishTargetUrl>
+    <History>True|2023-01-22T15:49:35.8077102Z;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>01/22/2023 19:25:17</publishTime>
+    </File>
+    <File Include="appsettings.production.json">
+      <publishTime>01/22/2023 19:37:45</publishTime>
+    </File>
+    <File Include="ItVisShop.DAL.dll">
+      <publishTime>01/22/2023 14:19:20</publishTime>
+    </File>
+    <File Include="ItVisShop.DAL.pdb">
+      <publishTime>01/22/2023 14:19:20</publishTime>
+    </File>
+    <File Include="ItVisShop.deps.json">
+      <publishTime>01/22/2023 19:37:38</publishTime>
+    </File>
+    <File Include="ItVisShop.dll">
+      <publishTime>01/22/2023 19:37:37</publishTime>
+    </File>
+    <File Include="ItVisShop.Domain.dll">
+      <publishTime>01/22/2023 14:19:19</publishTime>
+    </File>
+    <File Include="ItVisShop.Domain.pdb">
+      <publishTime>01/22/2023 14:19:19</publishTime>
+    </File>
+    <File Include="ItVisShop.exe">
+      <publishTime>01/22/2023 19:37:37</publishTime>
+    </File>
+    <File Include="ItVisShop.pdb">
+      <publishTime>01/22/2023 19:37:37</publishTime>
+    </File>
+    <File Include="ItVisShop.runtimeconfig.json">
+      <publishTime>01/22/2023 14:19:24</publishTime>
+    </File>
+    <File Include="ItVisShop.Service.dll">
+      <publishTime>01/22/2023 14:19:20</publishTime>
+    </File>
+    <File Include="ItVisShop.Service.pdb">
+      <publishTime>01/22/2023 14:19:20</publishTime>
+    </File>
+    <File Include="Microsoft.Data.SqlClient.dll">
+      <publishTime>09/21/2021 03:59:32</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Abstractions.dll">
+      <publishTime>08/15/2022 21:29:26</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.dll">
+      <publishTime>08/15/2022 21:29:58</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Relational.dll">
+      <publishTime>08/15/2022 21:30:18</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.SqlServer.dll">
+      <publishTime>08/15/2022 21:30:34</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Caching.Memory.dll">
+      <publishTime>01/14/2022 23:54:16</publishTime>
+    </File>
+    <File Include="Microsoft.Identity.Client.dll">
+      <publishTime>10/20/2020 01:51:12</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.JsonWebTokens.dll">
+      <publishTime>10/13/2020 04:21:34</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Logging.dll">
+      <publishTime>10/13/2020 04:23:12</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Protocols.dll">
+      <publishTime>10/13/2020 04:25:30</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Protocols.OpenIdConnect.dll">
+      <publishTime>10/13/2020 04:31:32</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Tokens.dll">
+      <publishTime>10/13/2020 04:27:48</publishTime>
+    </File>
+    <File Include="Microsoft.Win32.SystemEvents.dll">
+      <publishTime>11/15/2019 12:36:56</publishTime>
+    </File>
+    <File Include="runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll">
+      <publishTime>11/15/2019 12:56:36</publishTime>
+    </File>
+    <File Include="runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll">
+      <publishTime>09/21/2021 03:59:34</publishTime>
+    </File>
+    <File Include="runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>10/20/2020 22:13:26</publishTime>
+    </File>
+    <File Include="runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>10/20/2020 22:13:26</publishTime>
+    </File>
+    <File Include="runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>10/20/2020 22:13:38</publishTime>
+    </File>
+    <File Include="runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>10/20/2020 22:13:26</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll">
+      <publishTime>11/15/2019 12:54:18</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll">
+      <publishTime>11/15/2019 12:54:20</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll">
+      <publishTime>11/15/2019 12:54:30</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll">
+      <publishTime>09/21/2021 03:59:34</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll">
+      <publishTime>11/15/2019 12:53:44</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll">
+      <publishTime>11/15/2019 12:53:46</publishTime>
+    </File>
+    <File Include="System.Configuration.ConfigurationManager.dll">
+      <publishTime>11/15/2019 12:37:04</publishTime>
+    </File>
+    <File Include="System.Drawing.Common.dll">
+      <publishTime>09/18/2018 23:38:14</publishTime>
+    </File>
+    <File Include="System.IdentityModel.Tokens.Jwt.dll">
+      <publishTime>10/13/2020 04:20:12</publishTime>
+    </File>
+    <File Include="System.Runtime.Caching.dll">
+      <publishTime>11/15/2019 12:37:36</publishTime>
+    </File>
+    <File Include="System.Security.Cryptography.ProtectedData.dll">
+      <publishTime>11/15/2019 12:37:42</publishTime>
+    </File>
+    <File Include="System.Security.Permissions.dll">
+      <publishTime>11/15/2019 12:56:44</publishTime>
+    </File>
+    <File Include="System.Windows.Extensions.dll">
+      <publishTime>11/15/2019 12:56:52</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>01/22/2023 19:37:45</publishTime>
+    </File>
+    <File Include="wwwroot/css/cart.css">
+      <publishTime>01/17/2023 20:03:01</publishTime>
+    </File>
+    <File Include="wwwroot/css/header.css">
+      <publishTime>01/22/2023 12:02:57</publishTime>
+    </File>
+    <File Include="wwwroot/css/main.css">
+      <publishTime>01/22/2023 11:44:20</publishTime>
+    </File>
+    <File Include="wwwroot/css/responsive.css">
+      <publishTime>12/05/2022 19:14:04</publishTime>
+    </File>
+    <File Include="wwwroot/favicon.ico">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/img/header/logo.png">
+      <publishTime>08/14/2016 15:14:21</publishTime>
+    </File>
+    <File Include="wwwroot/img/home/avds_large.jpg">
+      <publishTime>05/20/2018 17:11:06</publishTime>
+    </File>
+    <File Include="wwwroot/img/home/avds_small.jpg">
+      <publishTime>05/20/2018 16:42:52</publishTime>
+    </File>
+    <File Include="wwwroot/img/home/avds_xl.jpg">
+      <publishTime>05/20/2018 18:40:22</publishTime>
+    </File>
+    <File Include="wwwroot/img/home/footer.jpg">
+      <publishTime>05/20/2018 20:54:54</publishTime>
+    </File>
+    <File Include="wwwroot/img/home/icon_1.svg">
+      <publishTime>05/20/2018 20:06:34</publishTime>
+    </File>
+    <File Include="wwwroot/img/home/icon_2.svg">
+      <publishTime>05/20/2018 20:07:08</publishTime>
+    </File>
+    <File Include="wwwroot/img/home/icon_3.svg">
+      <publishTime>05/20/2018 20:07:32</publishTime>
+    </File>
+    <File Include="wwwroot/img/home/slider/home_slider_1.jpg">
+      <publishTime>05/19/2018 16:30:36</publishTime>
+    </File>
+    <File Include="wwwroot/img/home/slider/home_slider_2.jpg">
+      <publishTime>10/30/2022 22:38:12</publishTime>
+    </File>
+    <File Include="wwwroot/img/home/slider/home_slider_3.jpg">
+      <publishTime>10/30/2022 22:55:36</publishTime>
+    </File>
+    <File Include="wwwroot/img/Products/category.jpg">
+      <publishTime>05/21/2018 16:11:02</publishTime>
+    </File>
+    <File Include="wwwroot/img/Products/cpu/AmdRyzen7.jpg">
+      <publishTime>03/26/2022 16:23:41</publishTime>
+    </File>
+    <File Include="wwwroot/img/Products/cpu/AmdRyzen9.jpg">
+      <publishTime>03/26/2022 16:23:55</publishTime>
+    </File>
+    <File Include="wwwroot/img/Products/smartphones/iphone14_1.webp">
+      <publishTime>11/05/2022 20:35:00</publishTime>
+    </File>
+    <File Include="wwwroot/img/Products/smartphones/iphone14_2.webp">
+      <publishTime>11/05/2022 20:35:17</publishTime>
+    </File>
+    <File Include="wwwroot/img/Products/smartphones/iphone14_3.webp">
+      <publishTime>11/05/2022 20:35:31</publishTime>
+    </File>
+    <File Include="wwwroot/img/Products/smartphones/p50_1.webp">
+      <publishTime>11/05/2022 20:55:23</publishTime>
+    </File>
+    <File Include="wwwroot/img/Products/smartphones/p50_2.webp">
+      <publishTime>11/05/2022 20:55:34</publishTime>
+    </File>
+    <File Include="wwwroot/img/Products/smartphones/p50_3.webp">
+      <publishTime>11/05/2022 20:55:45</publishTime>
+    </File>
+    <File Include="wwwroot/img/Products/smartphones/s22_1.webp">
+      <publishTime>11/05/2022 15:01:59</publishTime>
+    </File>
+    <File Include="wwwroot/img/Products/smartphones/s22_2.webp">
+      <publishTime>11/05/2022 15:15:21</publishTime>
+    </File>
+    <File Include="wwwroot/img/Products/smartphones/s22_3.webp">
+      <publishTime>11/05/2022 15:15:32</publishTime>
+    </File>
+    <File Include="wwwroot/img/Products/smartphones/tabs8_1.webp">
+      <publishTime>11/05/2022 20:53:43</publishTime>
+    </File>
+    <File Include="wwwroot/img/Products/smartphones/tabs8_2.webp">
+      <publishTime>11/05/2022 20:54:05</publishTime>
+    </File>
+    <File Include="wwwroot/img/Products/videocards/rtx3070.jpg">
+      <publishTime>03/26/2022 15:43:20</publishTime>
+    </File>
+    <File Include="wwwroot/ItVisShop.styles.css">
+      <publishTime>01/22/2023 14:19:24</publishTime>
+    </File>
+    <File Include="wwwroot/js/main.js">
+      <publishTime>01/16/2023 16:40:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.css">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.css.map">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.min.css">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.js">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.js.map">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.min.js">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/LICENSE">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/additional-methods.js">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/additional-methods.min.js">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/jquery.validate.js">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/jquery.validate.min.js">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/LICENSE.md">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.js">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.min.js">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.min.map">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/LICENSE.txt">
+      <publishTime>09/25/2022 21:45:01</publishTime>
+    </File>
+  </ItemGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=SQL5107.site4now.net%3bInitial Catalog=db_a938e5_itvisshop%3bUser Id=db_a938e5_itvisshop_admin%3bPassword=andreY_2002</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

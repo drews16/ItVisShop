@@ -1,0 +1,541 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\ItVisShop.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ItVisShop.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\actual_amg.zip",
+      "PackagePath": "staticwebassets\\actual_amg.zip"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\css\\admin.css",
+      "PackagePath": "staticwebassets\\css\\admin.css"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\css\\cart.css",
+      "PackagePath": "staticwebassets\\css\\cart.css"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\css\\details.css",
+      "PackagePath": "staticwebassets\\css\\details.css"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\css\\order.css",
+      "PackagePath": "staticwebassets\\css\\order.css"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\css\\products.css",
+      "PackagePath": "staticwebassets\\css\\products.css"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\css\\review.css",
+      "PackagePath": "staticwebassets\\css\\review.css"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\14pm_1.jpg",
+      "PackagePath": "staticwebassets\\img\\14pm_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\14pm_2.jpg",
+      "PackagePath": "staticwebassets\\img\\14pm_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\category.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\category.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\cpu\\ryzen7_1.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\cpu\\ryzen7_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\cpu\\ryzen7_2.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\cpu\\ryzen7_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\cpu\\ryzen9_1.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\cpu\\ryzen9_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\cpu\\ryzen9_2.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\cpu\\ryzen9_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\iphone12_1.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\iphone12_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\iphone12_2.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\iphone12_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\iphone13_1.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\iphone13_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\iphone13_2.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\iphone13_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\iphone13_3.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\iphone13_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\iphone13_4.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\iphone13_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\iphone14_1.webp",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\iphone14_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\iphone14_2.webp",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\iphone14_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\iphone14_3.webp",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\iphone14_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\mate50_1.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\mate50_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\mate50_2.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\mate50_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\mate50_3.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\mate50_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\nova10_1.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\nova10_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\nova10_2.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\nova10_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\nova10_3.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\nova10_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\nova9_1.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\nova9_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\nova9_2.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\nova9_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\p50_1.webp",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\p50_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\p50_2.webp",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\p50_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\p50_3.webp",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\p50_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\p50p_1.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\p50p_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\p50p_2.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\p50p_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\p50p_3.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\p50p_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\p50p_4.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\p50p_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\s22_1.webp",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\s22_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\s22_2 — копия.webp",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\s22_2 — копия.webp"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\s22_2.webp",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\s22_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\s22_3.webp",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\s22_3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\s22u_1.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\s22u_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\s22u_2.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\s22u_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\s22u_3.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\s22u_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\tabs8_1.webp",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\tabs8_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\tabs8_2.webp",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\tabs8_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\z3_1.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\z3_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\z3_2.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\z3_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\z3_3.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\z3_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\smartphones\\z3_4.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\smartphones\\z3_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\Products\\videocards\\rtx3070.jpg",
+      "PackagePath": "staticwebassets\\img\\Products\\videocards\\rtx3070.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\header\\logo.png",
+      "PackagePath": "staticwebassets\\img\\header\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\home\\avds_large.jpg",
+      "PackagePath": "staticwebassets\\img\\home\\avds_large.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\home\\avds_small.jpg",
+      "PackagePath": "staticwebassets\\img\\home\\avds_small.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\home\\avds_xl.jpg",
+      "PackagePath": "staticwebassets\\img\\home\\avds_xl.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\home\\footer.jpg",
+      "PackagePath": "staticwebassets\\img\\home\\footer.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\home\\icon_1.svg",
+      "PackagePath": "staticwebassets\\img\\home\\icon_1.svg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\home\\icon_2.svg",
+      "PackagePath": "staticwebassets\\img\\home\\icon_2.svg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\home\\icon_3.svg",
+      "PackagePath": "staticwebassets\\img\\home\\icon_3.svg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\home\\slider\\home_slider_1.jpg",
+      "PackagePath": "staticwebassets\\img\\home\\slider\\home_slider_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\home\\slider\\home_slider_2.jpg",
+      "PackagePath": "staticwebassets\\img\\home\\slider\\home_slider_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\img\\home\\slider\\home_slider_3.jpg",
+      "PackagePath": "staticwebassets\\img\\home\\slider\\home_slider_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\js\\cart.js",
+      "PackagePath": "staticwebassets\\js\\cart.js"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\js\\details.js",
+      "PackagePath": "staticwebassets\\js\\details.js"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\js\\index.js",
+      "PackagePath": "staticwebassets\\js\\index.js"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\js\\order.js",
+      "PackagePath": "staticwebassets\\js\\order.js"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.ItVisShop.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.build.ItVisShop.props",
+      "PackagePath": "build\\ItVisShop.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ItVisShop.props",
+      "PackagePath": "buildMultiTargeting\\ItVisShop.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildTransitive.ItVisShop.props",
+      "PackagePath": "buildTransitive\\ItVisShop.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

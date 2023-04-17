@@ -1,0 +1,231 @@
+﻿@addTagHelper *, ItVisShop
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ItVisShop</title>
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link rel="stylesheet" href="/css/main.css" asp-append-version="true" />
+    <link rel="stylesheet" href="/css/responsive.css" asp-append-version="true" />
+    <link rel="stylesheet" href="/css/cart.css" asp-append-version="true" />
+    <link rel="stylesheet" href="/css/index.css" asp-append-version="true" />
+    <link rel="stylesheet" href="/css/products.css" asp-append-version="true" />
+    <link rel="stylesheet" href="/css/details.css" asp-append-version="true" />
+    <link rel="stylesheet" href="/css/order.css" asp-append-version="true" />
+    <link rel="stylesheet" href="/css/admin.css" asp-append-version="true" />
+    <link rel="stylesheet" href="/css/review.css" asp-append-version="true" />
+    <link href="https://api.cryptocloud.plus/static/widget/v2/css/app.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();
+       for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+       k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+       ym(92581653, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            ecommerce:"dataLayer"
+       });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/92581653" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <header class="header">
+        <div class="header-container">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <a asp-controller="Home" asp-action="Index"><img src="~/img/header/logo.png" /></a>
+                    </div>
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a asp-controller="Home" asp-action="Index">Главная</a></li>
+                            <li class="hassubs">
+                                <a>Категории</a>
+                                <ul>
+                                    <li><a asp-controller="Product" asp-action="Products" asp-route-category="Смартфон">Смартфоны</a></li>
+                                    <li><a asp-controller="Product" asp-action="Products" asp-route-category="Планшет">Планшеты</a></li>
+                                    <li><a asp-controller="Product" asp-action="Products" asp-route-category="Процессор">Процессоры</a></li>
+                                    <li><a asp-controller="Product" asp-action="Products" asp-route-category="Видеокарта">Видеокарты</a></li>
+                                </ul>
+                            </li>
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <li><a asp-controller="Admin" asp-action="Admin">Панель управления</a></li>
+                            }
+                        </ul>
+                    </nav>
+                            
+                    <div class="header-extra">
+                        <div class="account">
+                            @if (!User.Identity.IsAuthenticated)
+                            {
+                                <a asp-controller="Account" asp-action="Login">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        <path d="M272 304h-96C78.8 304 0 382.8 0 480c0 17.67 14.33 32 32 32h384c17.67
+                                        0 32-14.33 32-32C448 382.8 369.2 304 272 304zM48.99 464C56.89 400.9 110.8 352
+                                        176 352h96c65.16 0 119.1 48.95 127 112H48.99zM224 256c70.69 0 128-57.31 
+                                        128-128c0-70.69-57.31-128-128-128S96 57.31 96 128C96 198.7 153.3 256 224 256zM224
+                                        48c44.11 0 80 35.89 80 80c0 44.11-35.89 80-80 80S144 172.1 144 128C144 83.89 179.9 48 224 48z"/>
+                                    </svg>
+                                    <div id="account">Войти</div>
+                                </a>
+                            }
+                            else
+                            {
+                                <a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        <path d="M272 304h-96C78.8 304 0 382.8 0 480c0 17.67 14.33 32 32 32h384c17.67
+                                    0 32-14.33 32-32C448 382.8 369.2 304 272 304zM48.99 464C56.89 400.9 110.8 352
+                                    176 352h96c65.16 0 119.1 48.95 127 112H48.99zM224 256c70.69 0 128-57.31 
+                                    128-128c0-70.69-57.31-128-128-128S96 57.31 96 128C96 198.7 153.3 256 224 256zM224
+                                    48c44.11 0 80 35.89 80 80c0 44.11-35.89 80-80 80S144 172.1 144 128C144 83.89 179.9 48 224 48z"/>
+                                    </svg>
+                                    <div>@User.FindFirst("UserName").Value</div>
+                                    <ul>
+                                            <li><a asp-controller="Account" asp-action="UserOrders">Мои заказы</a></li>
+                                            <li><a asp-controller="" asp-action="">Редактировать</a></li>
+                                            <li><a asp-controller="Account" asp-action="Logout">Выйти</a></li>
+                                    </ul>
+                                </a>
+                            }
+                        </div>
+                        <div class="shopping-cart">
+                            <a asp-controller="Cart" asp-action="Cart">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								    viewBox="0 0 489 489" style="enable-background:new 0 0 489 489;" xml:space="preserve">
+                                    <g>
+                                        <path d="M440.1,422.7l-28-315.3c-0.6-7-6.5-12.3-13.4-12.3h-57.6C340.3,42.5,297.3,0,244.5,0s-95.8,42.5-96.6,95.1H90.3
+											    c-7,0-12.8,5.3-13.4,12.3l-28,315.3c0,0.4-0.1,0.8-0.1,1.2c0,35.9,32.9,65.1,73.4,65.1h244.6c40.5,0,73.4-29.2,73.4-65.1
+											    C440.2,423.5,440.2,423.1,440.1,422.7z M244.5,27c37.9,0,68.8,30.4,69.6,68.1H174.9C175.7,57.4,206.6,27,244.5,27z M366.8,462
+											    H122.2c-25.4,0-46-16.8-46.4-37.5l26.8-302.3h45.2v41c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5v-41h139.3v41
+											    c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5v-41h45.2l26.9,302.3C412.8,445.2,392.1,462,366.8,462z"/>
+                                    </g>
+                                </svg>
+                                <div>Корзина</div>
+                            </a>
+                        </div>
+                        <div class="search">
+                            <div class="search-icon" onclick="showSearchPanel()"> 
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									viewBox="0 0 475.084 475.084"
+										xml:space="preserve">
+                                    <g>
+                                        <path d="M464.524,412.846l-97.929-97.925c23.6-34.068,35.406-72.047,35.406-113.917c0-27.218-5.284-53.249-15.852-78.087
+											c-10.561-24.842-24.838-46.254-42.825-64.241c-17.987-17.987-39.396-32.264-64.233-42.826
+											C254.246,5.285,228.217,0.003,200.999,0.003c-27.216,0-53.247,5.282-78.085,15.847C98.072,26.412,76.66,40.689,58.673,58.676
+											c-17.989,17.987-32.264,39.403-42.827,64.241C5.282,147.758,0,173.786,0,201.004c0,27.216,5.282,53.238,15.846,78.083
+											c10.562,24.838,24.838,46.247,42.827,64.234c17.987,17.993,39.403,32.264,64.241,42.832c24.841,10.563,50.869,15.844,78.085,15.844
+											c41.879,0,79.852-11.807,113.922-35.405l97.929,97.641c6.852,7.231,15.406,10.849,25.693,10.849
+											c9.897,0,18.467-3.617,25.694-10.849c7.23-7.23,10.848-15.796,10.848-25.693C475.088,428.458,471.567,419.889,464.524,412.846z
+												M291.363,291.358c-25.029,25.033-55.148,37.549-90.364,37.549c-35.21,0-65.329-12.519-90.36-37.549
+											c-25.031-25.029-37.546-55.144-37.546-90.36c0-35.21,12.518-65.334,37.546-90.36c25.026-25.032,55.15-37.546,90.36-37.546
+											c35.212,0,65.331,12.519,90.364,37.546c25.033,25.026,37.548,55.15,37.548,90.36C328.911,236.214,316.392,266.329,291.363,291.358z
+											"/>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="hamburger">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0
+                                        113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7
+                                        0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @* Search panel *@
+        <div class="search-panel"> 
+            <div class="container">
+                <div class="search-panel-content">
+                    <form method="post" asp-controller="Product" asp-action="SearchProduct">
+                        <input class="search-input" type="search" name="searchString" placeholder="Поиск" />
+                        <input class="search-input-btn" type="submit" value="Искать"/>
+                    </form>                                
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="menu mobile-menu">
+        <div class="menu-container mobile-menu">
+            <div class="page-menu-content">
+                <div class="page-menu-search mobile-menu">
+                    <form method="post" asp-controller="Product" asp-action="SearchProduct" >
+                        <input class="page-menu-search__input mobile-menu" type="search" name="searchString" placeholder="Поиск">
+                    </form>
+                </div>
+                <ul class="page-menu-nav mobile-menu">
+                    <li class="page-menu__item mobile-menu">
+                        <a asp-controller="Home" asp-action="Index" >Главная</a>
+                    </li>
+                    <li class="page-menu__item has-children mobile-menu">
+                        <a>Категории</a>
+                        <ul class="page-menu__selection mobile-menu">
+                            <li class="page-menu__item mobile-menu"><a asp-controller="Product" asp-action="Products" asp-route-category="Смартфон">Смартфоны</a></li>
+                            <li class="page-menu__item mobile-menu"><a asp-controller="Product" asp-action="Products" asp-route-category="Планшет">Планшеты</a></li>
+                            <li class="page-menu__item mobile-menu"><a asp-controller="Product" asp-action="Products" asp-route-category="Процессор">Процессоры</a></li>
+                            <li class="page-menu__item mobile-menu"><a asp-controller="Product" asp-action="Products" asp-route-category="Видеокарта">Видеокарты</a></li>
+                        </ul>
+                    </li>
+                    <li class="page-menu__item has-children mobile-menu">
+                        <a>Аккаунт</a>
+                        <ul class="page-menu__selection mobile-menu">
+                            @if(User.Identity.IsAuthenticated)
+                            {
+                                <li class="page-menu__item mobile-menu"><a asp-controller="Account" asp-action="UserOrders">Мои заказы</a></li>
+                                <li class="page-menu__item mobile-menu"><a asp-controller="#" asp-action="#">Редактировать</a></li>
+                                <li class="page-menu__item mobile-menu"><a asp-controller="Account" asp-action="Logout">Выйти</a></li>
+                            }
+                            else
+                            {
+                                <li class="page-menu__item mobile-menu"><a asp-controller="Account" asp-action="Login">Войти</a></li>
+                            }
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="menu-close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3
+                    0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5
+                    12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/>
+            </svg>
+        </div>
+    </div>
+
+
+    @RenderBody()
+
+    <div class="footer">
+        <div class="footer-background">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo"></div>
+                    <div class="copyright">Copyright &copy <script>document.write(new Date().getFullYear());</script> | Created by Andrey Gnatyuk</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="/js/main.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

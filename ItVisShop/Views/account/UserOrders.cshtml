@@ -1,0 +1,93 @@
+﻿@addTagHelper *, ItVisShop
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@if(User.Identity.IsAuthenticated)
+{
+    @if (Model.ActiveOrders.Count == 0 && Model.HistoryOrders.Count == 0)
+    {
+        <div class="container">
+            <div class="user-order-empty">
+                <div class="user-order-empty__text">
+                    У вас пока что нет заказов.
+                    <a asp-controller="Product" asp-action="Products" asp-route-category="Смартфон">За покупками</a>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="container">
+            <div class="user-order-container">
+                <div class="user-order-tabs">
+                    <div class="order-tab active">Активные</div>
+                    <div class="order-tab">Все заказы</div>
+                </div>
+                <div id="tab-order__content" class="order-items active">
+                    @foreach(var item in Model.ActiveOrders)
+                    {
+                        <div class="order-item">
+                            <div class="user-order-item__title">
+                                <h3>ID заказ @item.OrderId</h3>
+                            </div>
+                            <div class="user-order-item-container">
+                                <div class="user-order-item-content">
+                                     <div class="user-order-item__status">
+                                        <div class="status-title">Статус</div>
+                                        <div class="status-value">@item.Status</div>
+                                    </div>
+                                    <div class="user-order-item__date">
+                                        <div class="date__title">Дата заказа:</div>
+                                        <div class="date__value">@item.DateOfPurchase</div>
+                                    </div>     
+                                    <div class="user-order-item__office">
+                                        <div class="office__title">Пункт выдачи:</div>
+                                        <div class="office__value">г. @item.Office.City.CityName улица @item.Office.Street дом @item.Office.Home</div>
+                                    </div>                    
+                                    <div class="user-order-item__order-total">
+                                        <div class="order-total__title">Сумма заказа:</div>
+                                                    <div class="order-total__value">@item.TotalPrice.ToString("c", new System.Globalization.CultureInfo("ru-RU"))</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+
+                <div id="tab-order__content" class="order-items">
+                    @foreach (var item in Model.HistoryOrders)
+                    {
+                        <div class="order-item">
+                            <div class="user-order-item__title">
+                                <h3>ID заказ @item.OrderId</h3>
+                            </div>
+                            <div class="user-order-item-container">
+                                <div class="user-order-item-content">
+                                        <div class="user-order-item__status">
+                                        <div class="status-title">Статус</div>
+                                        <div class="status-value">@item.Status</div>
+                                    </div>
+                                    <div class="user-order-item__date">
+                                        <div class="date__title">Дата заказа:</div>
+                                        <div class="date__value">@item.DateOfPurchase</div>
+                                    </div>     
+                                    <div class="user-order-item__office">
+                                        <div class="office__title">Пункт выдачи:</div>
+                                        <div class="office__value">г. @item.Office.City.CityName улица @item.Office.Street дом @item.Office.Home</div>
+                                    </div>                    
+                                    <div class="user-order-item__order-total">
+                                        <div class="order-total__title">Сумма заказа:</div>
+                                        <div class="order-total__value">@item.TotalPrice.ToString("c")</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+}
+
+@section Scripts {
+    <script src="/js/order.js"></script>
+}

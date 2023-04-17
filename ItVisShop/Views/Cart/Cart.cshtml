@@ -1,0 +1,124 @@
+﻿@if(User.Identity.IsAuthenticated && Model.Products.Count > 0)
+{
+<div class="cart-container">
+    <div class="container">
+        <div class="cart-columns">
+            <div class="cart-column__product">Продукт</div>
+            <div class="cart-column__price">Цена</div>
+            <div class="cart-column__quantity">Количество</div>
+            <div class="cart-column__total">Итог</div>
+        </div>
+
+
+        <div class="cart-items">
+            @foreach (var item in Model.Products)
+            {
+                <form method="post" id="cartForm">
+                    <input type="hidden" value="@item.ProductId" name="ProductId"/>
+                    <input type="hidden" value="@item.ProductCartId" name="ProductCartId"/>
+                    <input type="hidden" value="@item.Cart.CartId" name="CartId"/>
+                    <div class="cart-item">
+                        <div class="cart-item__product">
+                            <div class="cart-item__image">
+                                <img src="@item.Product.MainImage">
+                            </div>
+                            <div class="cart-item__name" >
+                                <a asp-controller="Product" asp-action="Details" asp-route-id="@item.Product.ProductId">@item.Product.Brand.BrandName @item.Product.Model</a>
+                                <div class="cart-item__panel">
+                                    <div class="panel__action">
+                                        <a asp-controller="Cart" asp-action="RemoveFromCart" asp-route-id="@item.ProductCartId">Удалить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="cart-item__price" class="cart-item__price">@item.Product.Price.ToString("c", new System.Globalization.CultureInfo("ru-RU"))</div>
+                        <div class="cart-item__quantity">
+                            <div class="product__quantity">
+                                <div class="btn-minus" id="btn-minus">&minus;</div>
+                                <input id="quantity__input" class="quantity__input" type="number" value="@item.Count" min="1" max="@item.Product.AvailableQuantity" name="Count" pattern="[0-9]" readonly />
+                                <div class="btn-plus" id="btn-plus">&plus;</div>
+                            </div>
+                        </div>
+                        <div id="cart-item__total" class="cart-item__total">@((@item.Count * @item.Product.Price).ToString("c", new System.Globalization.CultureInfo("ru-RU")))</div>
+                    </div>
+                </form>
+            }
+        </div>
+
+        <div class="cart-info">
+            <div class="cart-info__title">Итог</div>
+            <div class="cart-total-container">
+                <ul>
+                    <li class="cart-total__item">
+                        <div class="cart-total__title">Товаров в корзине</div>
+                        <div id="cart-total-count" class="cart__total__value">@Model.ProductCount</div>
+                    </li>                                
+                    <li class="cart-total__item">
+                        <div class="cart-total__title">К оплате</div>
+                        <div id="cart-total-price" class="cart-total__value">@Model.TotalPrice.ToString("c", new System.Globalization.CultureInfo("ru-RU"))</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="cart-buttons">
+                <div class="cart-btn"><a class="action-link" asp-controller="Cart" asp-action="RemoveAll">Очистить корзину</a></div>
+                <div class="cart-btn"><a class="action-link" asp-controller="Order" asp-action="Order">Оформить заказ</a></div>
+            </div>
+        </div>
+    </div>
+</div> 
+}
+
+@if(User.Identity.IsAuthenticated && Model.Products.Count == 0)
+{
+    <div class="cart-error__text">
+        Корзина пуста! Добавте товары в корзину. 
+    </div>
+}
+
+@if(!User.Identity.IsAuthenticated)
+{
+    <div class="cart-error__text">
+        Только авторизованные пользователи могут добавлять товары в корзину
+    </div>
+}
+
+@section Scripts {
+    <script src="/js/cart.js" asp-append-version="true"></script>
+    <script>
+            const forms = document.querySelectorAll("#cartForm");
+
+                plusBtns.forEach((el, index) => 
+                el.addEventListener("click", function(e) {
+                    
+                    const model = $(forms[index]).serialize();
+                     e.preventDefault();
+                     $.ajax({
+                        url: "@Url.Action("UpdateProductCart", "Cart")",
+                        method: "post",
+                        data: model,
+                        success: function() {
+                            console.log("good");
+                        }
+                    });
+                })
+            )
+            
+            minusBtns.forEach((el, index) => 
+            el.addEventListener("click", function(e) {
+
+                    const model = $(forms[index]).serialize();
+                        e.preventDefault();
+                        $.ajax({
+                        url: "@Url.Action("UpdateProductCart", "Cart")",
+                        method: "post",
+                        data: model,
+                        success: function() {
+                            console.log("good");
+                        }
+                    });  
+                })
+            )
+    </script>
+}

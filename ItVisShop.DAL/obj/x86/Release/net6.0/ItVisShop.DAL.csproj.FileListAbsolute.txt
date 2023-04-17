@@ -1,0 +1,15 @@
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.DAL\bin\x86\Release\net6.0\ItVisShop.DAL.deps.json
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.DAL\bin\x86\Release\net6.0\ItVisShop.DAL.dll
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.DAL\bin\x86\Release\net6.0\ItVisShop.DAL.pdb
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.DAL\bin\x86\Release\net6.0\ItVisShop.Domain.dll
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.DAL\bin\x86\Release\net6.0\ItVisShop.Domain.pdb
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.DAL\obj\x86\Release\net6.0\ItVisShop.DAL.csproj.AssemblyReference.cache
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.DAL\obj\x86\Release\net6.0\ItVisShop.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.DAL\obj\x86\Release\net6.0\ItVisShop.DAL.AssemblyInfoInputs.cache
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.DAL\obj\x86\Release\net6.0\ItVisShop.DAL.AssemblyInfo.cs
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.DAL\obj\x86\Release\net6.0\ItVisShop.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.DAL\obj\x86\Release\net6.0\ItVisShop.DAL.csproj.CopyComplete
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.DAL\obj\x86\Release\net6.0\ItVisShop.DAL.dll
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.DAL\obj\x86\Release\net6.0\refint\ItVisShop.DAL.dll
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.DAL\obj\x86\Release\net6.0\ItVisShop.DAL.pdb
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.DAL\obj\x86\Release\net6.0\ref\ItVisShop.DAL.dll

@@ -1,0 +1,17 @@
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.Service\bin\x86\Release\net6.0\ItVisShop.Service.deps.json
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.Service\bin\x86\Release\net6.0\ItVisShop.Service.dll
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.Service\bin\x86\Release\net6.0\ItVisShop.Service.pdb
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.Service\bin\x86\Release\net6.0\ItVisShop.DAL.dll
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.Service\bin\x86\Release\net6.0\ItVisShop.Domain.dll
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.Service\bin\x86\Release\net6.0\ItVisShop.DAL.pdb
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.Service\bin\x86\Release\net6.0\ItVisShop.Domain.pdb
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.Service\obj\x86\Release\net6.0\ItVisShop.Service.csproj.AssemblyReference.cache
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.Service\obj\x86\Release\net6.0\ItVisShop.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.Service\obj\x86\Release\net6.0\ItVisShop.Service.AssemblyInfoInputs.cache
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.Service\obj\x86\Release\net6.0\ItVisShop.Service.AssemblyInfo.cs
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.Service\obj\x86\Release\net6.0\ItVisShop.Service.csproj.CoreCompileInputs.cache
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.Service\obj\x86\Release\net6.0\ItVisShop.Service.csproj.CopyComplete
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.Service\obj\x86\Release\net6.0\ItVisShop.Service.dll
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.Service\obj\x86\Release\net6.0\refint\ItVisShop.Service.dll
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.Service\obj\x86\Release\net6.0\ItVisShop.Service.pdb
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.Service\obj\x86\Release\net6.0\ref\ItVisShop.Service.dll

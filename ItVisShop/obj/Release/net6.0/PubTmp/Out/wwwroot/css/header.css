@@ -1,0 +1,285 @@
+﻿.header {
+    width: 100%;
+    z-index: 100;
+}
+
+.header-container {
+    width: 100%;
+}
+
+.header-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    height: 120px;
+}
+
+.logo > a > img {
+    width: 300px;
+    height: auto;
+}
+
+.main-nav {
+    margin-left: 150px;
+}
+
+.main-nav > ul > li {
+    display: inline-block;
+    position: relative;
+}
+
+.main-nav > ul > li > a {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+.main-nav > ul > li:not(:last-child) {
+    margin-right: 45px;
+}
+
+.main-nav > ul > li > a:hover {
+    color: var(--hover-color);
+    transition: 0.5s all ease;
+}
+
+.hassubs > ul {
+    position: absolute;
+    visibility: hidden;
+    padding: 15px 25px 25px 25px;
+    transition: 0.2s all ease;
+    top: calc(100% + 20px);
+    left: -50%;
+}
+
+.hassubs:hover > ul {
+    visibility: visible;
+    z-index: 1000;
+    background: white;
+}
+
+.hassubs > ul > li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.hassubs > ul > li > a {
+    font-size: 14px;
+    font-weight: 600;
+    color: grey;
+}
+
+.hassubs > ul > li > a:hover {
+    color: var(--hover-color);
+    transition: 0.5s all ease;
+}
+
+.header-extra {
+    display: inline-block;
+    margin-left: auto;
+}
+
+.account {
+    display: inline-block;
+}
+
+.shopping-cart {
+    display: inline-block;
+}
+
+.shopping-cart > a > svg,
+.account > a > svg {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.shopping-cart > a > div,
+.account > a > div {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 12px;
+    color: black;
+    font-size: 15px;
+}
+
+.shopping-cart {
+    margin-left: 15px;
+}
+
+.shopping-cart > a:hover > svg,
+.shopping-cart > a:hover > div,
+.account > a:hover > svg,
+.account > a:hover > div {
+    fill: var(--hover-color);
+    color: var(--hover-color);
+    transition: 0.5s all ease;
+}
+
+.validation-summary-errors {
+    color: red;
+}
+
+.account > ul {
+    display: none;
+}
+
+.account:hover > ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 25px 25px 25px;
+    z-index: 100;
+    background: white;
+    transition: 0.5s all ease;
+}
+
+.account > ul > li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.account > ul > li > a {
+    color: grey;
+    font-weight: 600;
+}
+
+.account > ul > li > a:hover {
+    color: blue;
+    transition: 0.5s all ease;
+}
+
+/* Serach panel */
+.search {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.search-icon {
+    height: 15px;
+    width: 15px;
+}
+
+.search-icon:hover > svg {
+    fill: var(--hover-color);
+    transition: 0.5s all ease;
+}
+
+.search-panel {
+    width: 100%;
+    background: var(--main-bgc);
+    z-index: 10;
+    position: absolute;
+    display: none;
+}
+
+.search-panel-content {
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.search-input {
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+
+/* Modal. */
+
+/*.account-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 100;
+}*/
+
+.account-register-modal,
+.account-login {
+    display: flex;
+    justify-content: center;
+}
+
+/*.modal__close {
+    color: grey;
+    float: right;
+    font-size: 28px;
+    font-weight: 600;
+} */
+
+/*.modal__close:hover {
+    color: black;
+    cursor: pointer;
+}*/
+
+/*.modal__active {
+    display: block;
+}*/
+
+/*.modal__content {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 30%;
+    padding: 30px;
+    border: 1px solid grey;
+    margin: 15% auto;
+    box-shadow: 0 4px 8px 0 black;
+}*/
+
+.modal__register__content,
+.modal__login__content {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 30%;
+    padding: 30px;
+}
+
+.modal__content__phone, .modal__content__password,
+.modal__content__name, .modal__content__surname,
+.modal__content__email {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.modal__content__phone > input, .modal__content__name > input,
+.modal__content__password > input, .modal__content__surname > input,
+.modal__content__email > input {
+    width: 100%;
+}
+
+.modal__content > form > input {
+    width: 90%;
+}
+
+.modal__btn {
+    background: none;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.modal__btn:hover {
+    background: black;
+    color: white;
+    transition: 0.5s all ease;
+}
+
+.account-hassubs {
+    list-style: none;
+}
+
+

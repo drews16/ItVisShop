@@ -1,0 +1,44 @@
+﻿@{
+	ViewData["Title"] = "Отзывы";
+}
+
+<div class="review">
+	<div class="container">
+		<div class="add-review-content">
+			<form method="post" asp-controller="Product" asp-action="Review">
+				<input type="hidden" value="@Model" name="ProductId" />
+				<div class="add-review__title">
+					Добавить отзыв
+				</div>
+				<div class="rating-area-container">
+					<div class="rating-area__title">
+						Качество продукта
+					</div>
+					<div class="rating-area">
+						<input type="radio" id="star-5" name="UserMark" value="5" required>
+						<label for="star-5" title="Оценка «5»"></label>	
+						<input type="radio" id="star-4" name="UserMark" value="4" required>
+						<label for="star-4" title="Оценка «4»"></label>    
+						<input type="radio" id="star-3" name="UserMark" value="3" required>
+						<label for="star-3" title="Оценка «3»"></label>  
+						<input type="radio" id="star-2" name="UserMark" value="2" required>
+						<label for="star-2" title="Оценка «2»"></label>    
+						<input type="radio" id="star-1" name="UserMark" value="1" required>
+						<label for="star-1" title="Оценка «1»"></label>
+					</div>
+				</div>
+				 <div class="review-comment">
+					 <div class="review-comment__title">
+						 Комментарий
+					 </div>
+					 <div class="review-comment__text">
+						<textarea rows="10" cols="70" name="ReviewText" wrap="hard" required></textarea>
+					 </div>
+				</div>
+				<div class="add-review-buttons">
+					<input class="add-review__btn" type="submit" value="Отправить" />
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,183 @@
+﻿<div class="product-details">
+    <div class="container">
+        @* Popups *@
+        <div class="popups-container" id="details-popups-container">
+            <div class="details-popups-content">
+                <div class="popups__product__img">
+                    <img src="@Model.Product.MainImage" />
+                </div>
+                <div class="details-popups__text">
+                    <div class="popups__heading">
+                        Товар добавлен в корзину
+                    </div>
+                    <div class="popups__product__title">
+                        @Model.Product.ProductType.ProductTypeName @Model.Product.Brand.BrandName @Model.Product.Model
+                    </div>
+                    <div class="details-pupups__buttons">
+                        <div class="details-pupups__btn">
+                            <a class="action-link" asp-controller="Cart" asp-action="Cart">Перейти в корзину</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="close-details-popups__btn" id="close-pupups-btn"><span>&times;</span></div>
+            </div>
+        </div>
+
+        <div class="details-container">
+            <div class="swiper details-swiper details_swiper_position">
+                <div class="swiper-wrapper">
+                    @foreach (var img in Model.ProductImages)
+                    {
+                        <div class="swiper-slide"><img src="@img.ImagePath" /></div>
+                    }
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="details-content">
+                <form method="post" id="detailsForm"> 
+                    <input type="hidden" value="@Model.Product.ProductId" name="ProductId" id="itemId"/>
+                    <div class="details__title">@Model.Product.ProductType.ProductTypeName @Model.Product.Brand.BrandName @Model.Product.Model</div>    
+                    <div class="details__price">@Model.Product.Price.ToString("c", new System.Globalization.CultureInfo("ru-RU"))</div>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <div class="product-quantity-container">
+                            <div class="available-quantity-container">
+                                <div class="available-quantity__title">В наличии</div>
+                                <div class="available-quantity">@Model.Product.AvailableQuantity</div>
+                            </div>
+
+                            <div class="product-quantity__buttons">
+                                <div class="btn-minus" id="btn-detail-minus" onclick="btnMinusClick()">&minus;</div>
+                                <input id="details-quantity__input" class="quantity__input" type="number" min="1" max="@Model.Product.AvailableQuantity" pattern="[0-9]" value="1" name="Count" readonly/>
+                                <div class="btn-plus" id="btn-detail-plus" onclick="btnPlusClick()">&plus;</div>
+                                <button class="add_cart_button" type="submit" id="AddCart">В корзину</button>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="product-quantity-container">
+                            <div class="available-quantity-container">
+                                <div class="available-quantity__title">В наличии</div>
+                                <div class="available-quantity">@Model.Product.AvailableQuantity</div>
+                            </div>
+                        </div>
+                    }
+                </form>
+            </div>
+        </div>
+
+        <div class="details-tabs-container">
+            <div class="tab-head">
+                <div class="tab-head__item active">О товаре</div>
+                <div class="tab-head__item">Характеристики</div>
+                <div class="tab-head__item">Отзывы<span>(@Model.Product.Reviews.Count)</span></div>
+            </div>
+            
+            <div class="tab-content">
+                @* Description *@
+                <div class="tab-content__item active">
+                    <div class="description-container">
+                        <div class="description__content">
+                            @Model.Product.Description
+                        </div>
+                    </div>
+                </div>
+
+                @* Specifications *@
+                <div class="tab-content__item">
+                    @foreach (var prop in Model.ProductProperties)
+                    {
+                        <div class="specification">
+                            <div class="specification__name">@prop.DisplayName</div>
+                            <div class="specification__value__container">
+                                <div class="specification__value">@prop.Value </div>
+                                <div class="specification__eng-unit"> @prop.EngUnit</div>
+                            </div>
+                        </div>
+                    }
+                </div>
+
+                @* Reviews *@
+                <div class="tab-content__item">
+                    <div class="reviews-content">
+                        <div class="reviews-result">
+                            <div class="reviews-result__rating">
+                                <div class="rating__value">@Model.Product.Rating</div>
+                                <span class="rating-star"></span>
+                            </div>
+                            <div class="reviews-count">@Model.Product.Reviews.Count отзывов</div>
+                            @if(User.Identity.IsAuthenticated)
+                            {
+                                <div class="reviews__buttons">
+                                    <div class="reviews__btn">
+                                        <a class="action-link" asp-controller="Product" asp-action="Review" asp-route-productId="@Model.Product.ProductId">Оставить отзыв</a>
+                                    </div> 
+                                </div>
+                            }
+                            else
+                            {
+                                <div id="popups-not-authorized" class="popups-not-authorized">
+                                    <div class="popups-not-authorized-content">
+                                        <span id="popups-not-authorized__close" class="popups-not-authorized__close">&times;</span>
+                                        <div>Только авторизованные пользователи могут оставлять отзывы</div>
+                                    </div>
+                                </div>
+                                <div class="reviews__buttons">
+                                    <div class="reviews__btn">
+                                        <a id="popups-not-authorized__btn" class="action-link">Оставить отзыв</a>
+                                    </div> 
+                                </div>
+                            }
+                        </div>
+                        <div class="reviews__items">
+                            @if(@Model.Product.Reviews.Count == 0)
+                            {
+                                <div>У этого товара пока что нет отзывов</div>
+                            }
+                            else
+                            {
+                                foreach (var item in Model.Product.Reviews)
+                                {
+                                    <div class="reviews__item">
+                                        <div class="reviews__item__heading">
+                                            <h4>@item.Profile.Name</h4>
+                                            <div class="usermark">
+                                                @item.UserMark
+                                                <span class="rating-star"></span>
+                                            </div>
+                                            <div class="reviews__item__heading__data">@item.DateOfCreate</div>
+                                        </div>
+                                        <div class="reviews__item__text">@item.ReviewText</div>  
+                                    </div>
+                                }  
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="/js/details.js" asp-append-version="true"></script>
+    <script>
+        $("#detailsForm").on("submit", function(e) {
+            e.preventDefault();
+            const model = $("#detailsForm").serialize();
+
+            $.ajax({
+                url: "@Url.Action("AddInCart", "Cart")",
+                method: "post",
+                data: model,
+                async: true,
+            });
+        });    
+    </script>
+}

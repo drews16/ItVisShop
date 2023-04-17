@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "SpTDWWAiD6G30PYALi8X4cO691bP2CNQ58Aaw1JwxHp5UBV/iHSYuE3CjO0bPhOA1q1Z4SmNMIN62ScON6VlLg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Андрей\\source\\repos\\C#\\ItVisShop\\ItVisShop.Domain\\ItVisShop.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Андрей\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+    "C:\\Users\\Андрей\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.9\\microsoft.entityframeworkcore.abstractions.6.0.9.nupkg.sha512",
+    "C:\\Users\\Андрей\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\Андрей\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

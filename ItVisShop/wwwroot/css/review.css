@@ -1,0 +1,110 @@
+﻿.review {
+    width: 100%;
+}
+
+.add-review-content {
+    padding-top: 130px;
+	padding-left: 100px;
+	padding-right: 100px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.add-review__title {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.rating-area-container {
+	width: 100%;
+	flex-direction: column;
+}
+
+.rating-area__title {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.rating-area {
+	display: flex;
+	width: 100%;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+
+.rating-area:not(:checked) > input {
+	display: none;
+}
+
+.rating-area:not(:checked) > label {
+	float: right;
+	width: 42px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 32px;
+	line-height: 32px;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+
+.rating-area > input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px goldenrod;
+}
+
+.rate-area > label:active {
+	position: relative;
+}
+
+.review-comment {
+	margin-top: 50px;
+}
+
+.review-comment__title {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.add-review-buttons {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-top: 30px;
+}
+
+.add-review__btn {
+	background: none;
+	padding: 10px 50px;
+	border: 2px solid black;
+	font-size: 16px;
+}
+
+.add-review__btn:hover {
+	background: black;
+	color: white;
+	transition: 0.5s ease;
+}

@@ -1,0 +1,12 @@
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.Domain\bin\x86\Release\net6.0\ItVisShop.Domain.deps.json
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.Domain\bin\x86\Release\net6.0\ItVisShop.Domain.dll
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.Domain\bin\x86\Release\net6.0\ItVisShop.Domain.pdb
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.Domain\obj\x86\Release\net6.0\ItVisShop.Domain.csproj.AssemblyReference.cache
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.Domain\obj\x86\Release\net6.0\ItVisShop.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.Domain\obj\x86\Release\net6.0\ItVisShop.Domain.AssemblyInfoInputs.cache
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.Domain\obj\x86\Release\net6.0\ItVisShop.Domain.AssemblyInfo.cs
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.Domain\obj\x86\Release\net6.0\ItVisShop.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.Domain\obj\x86\Release\net6.0\ItVisShop.Domain.dll
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.Domain\obj\x86\Release\net6.0\refint\ItVisShop.Domain.dll
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.Domain\obj\x86\Release\net6.0\ItVisShop.Domain.pdb
+C:\Users\Андрей\source\repos\C#\ItVisShop\ItVisShop.Domain\obj\x86\Release\net6.0\ref\ItVisShop.Domain.dll

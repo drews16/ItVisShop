@@ -1,0 +1,24 @@
+﻿@if(User.IsInRole("Admin"))
+{
+<div class="container">
+    <div class="admin-panel-container">
+        <div class="admin-panel-content">
+            <div class="add-product__type">
+                <h4>Выбирете категорию</h4>
+                @foreach (var item in Model)
+                {
+                    <a asp-controller="Admin" asp-action="CreateProduct" asp-route-productTypeId="@item.ProductTypeId">
+                        Добавить @item.ProductTypeName
+                    </a>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+}
+else
+{
+    <div>У вас нет прав доступа к этому ресурсу</div>
+}
+
+

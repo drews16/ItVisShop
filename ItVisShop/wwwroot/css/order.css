@@ -1,0 +1,257 @@
+﻿.order-content {
+    display: flex;
+    padding-bottom: 100px;
+    padding-top: 130px;
+}
+
+.steps-block, .order-block {
+    margin-top: 30px;
+}
+
+/* steps-block */
+.steps-block {
+    margin-right: 15px;
+    width: 900px;   
+}
+
+.delivery {
+    padding: 15px 20px;
+    border: 1px solid rgba(118,121,127,0.2);
+}
+
+.delivery__heading, 
+.user-info__heading {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.delivery-item {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.delivery__city,
+.delivery__office {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.delivery__city > label,
+.delivery__office > label {
+    margin-bottom: 10px;
+}
+
+.delivery__city > select,
+.delivery__office > select {
+    max-width: 40%;
+    padding: 7px;
+}
+
+.delivery__user-info {
+    border: 1px solid rgba(118,121,127,0.2);
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.user-info__item {
+    display: flex;
+    margin-bottom: 20px;    
+}
+
+.user-info__name, .user-info__surname,
+.user-info__phone, .user-info__email {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info__name,
+.user-info__phone {
+    margin-right: 30px;
+}
+
+.user-info__name > label, .user-info__surname > label,
+.user-info__phone > label, .user-info__email > label  {
+    margin-bottom: 10px;
+}
+
+/* Order-block */
+.order-block {
+    width: calc(100% - 915px);
+    border: 1px solid rgba(118,121,127,0.2);
+    padding: 20px;
+    max-height: 300px;
+    border-radius: 7px;
+}
+
+.order-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-block__heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-block__title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.order-block__link {
+    text-decoration: underline;
+}
+
+.order-block__link > a:hover {
+    color: blue;
+    transition: 0.5s all ease;
+}
+
+.summary-options {
+    display: flex;
+    flex-direction: column;
+}
+
+.summary-product__option,
+.summary-price__option {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.summary-option__value > span {
+    font-weight: 600;
+}
+
+.summary-btns {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.summary__btn > input {
+    background: white;
+    padding: 10px 10px;
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.summary__btn > input:hover {
+    background: black;
+    color: white;
+    transition: 0.5s all ease;
+}
+
+.summary-info {
+    display: flex;
+}
+
+.summary-text {
+    font-size: 12px;
+    color: grey;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.summary-text > span {
+    text-decoration: underline;
+}
+
+/******************
+    User orders. 
+******************/
+.user-order-empty__text {
+    margin-top: 140px;
+    font-size: 16px;
+}
+
+.user-order-empty__text > a {
+    text-decoration: underline;
+}
+
+.user-order-empty__text > a:hover {
+    color: blue;
+    transition: 0.5s all ease;
+}
+
+.user-order-container {
+    padding: 140px;
+}
+
+.user-order-tabs {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.order-tab {
+    padding: 8px 12px;
+    border: 2px solid #e3e3e3;
+}
+
+.order-tab.active {
+    background: black;
+    color: white;
+}
+
+.order-tab:hover {
+    background: black;
+    transition: 0.5s all ease;
+    cursor: pointer;
+    color: white;
+}
+
+.order-tab:first-child {
+    border-right: none;
+}
+
+.order-items.active {
+    display: block;
+}
+
+.order-items {
+    display: none;
+}
+
+.order-item {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    max-width: 800px;
+}
+
+.user-order-item__title {
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px solid #e3e3e3;
+}
+
+.user-order-item-container {
+    display: flex;
+    padding: 20px;
+    border: 2px solid #e3e3e3;
+    border-top: none;
+}
+
+.user-order-item-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.user-order-item-content > div {
+    padding-right: 50px;
+    padding-bottom: 15px;
+}
+
+.user-order-item__status, .user-order-item__date,
+.user-order-item__office, .user-order-item__order-total {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+

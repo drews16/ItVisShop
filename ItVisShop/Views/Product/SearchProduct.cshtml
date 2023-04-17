@@ -1,0 +1,37 @@
+﻿@if(Model.Count > 0)
+{
+    <div class="ads-xl ads-products__xl">
+        <div class="container">
+            <div class="ads-xl-container">
+                <div class="ads-xl__background" style="background-image:url(/img/Products/category.jpg);"></div>
+                <div class="ads-products__title">Лучшее в ItVis</div>
+            </div>
+        </div>
+    </div>  
+
+    <div class="products">
+        <div class="container">
+            <div class="products-container">
+                @foreach (var item in Model)
+                {
+                    <a class="product" asp-controller="Product" asp-action="Details" asp-route-id="@item.ProductId">
+                        <div class="product__image">
+                            <img src="@item.MainImage">
+                        </div>
+                        <div class="product__content">
+                            <div class="product__title">
+                                <h4>@item.Brand.BrandName @item.Model</h4>
+                            </div>
+                                    <div class="product__price">@item.Price.ToString("c", new System.Globalization.CultureInfo("ru-RU"))</div>
+                        </div>
+                    </a>
+                }
+            </div>
+        </div>
+    </div>
+
+}
+else
+{
+    <div class="search-product-error__text">По вашему запросу ничего не найдено</div>
+}

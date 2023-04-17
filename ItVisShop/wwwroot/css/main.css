@@ -1,0 +1,505 @@
+/****************/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900');
+
+/***************/
+.action-link {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background: #FFFFFF;
+    color: black;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 2.14;
+    font-weight: 400
+}
+
+div {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+a, a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:active {
+    color: blue;
+}
+
+.show {
+    display: flex !important;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 0.75rem;
+    max-width: 1320px;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/***************
+    Header.
+***************/
+.header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.header-container {
+    width: 100%;
+    background: white;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 130px;
+}
+
+.header.scrolled .header-content {
+    height: 70px;
+}
+
+.logo > a > img {
+    max-width: 300px;
+}
+
+.main-nav {
+    margin-left: 150px;
+}
+
+.main-nav > ul > li {
+    display: inline-block;
+    position: relative;
+}
+
+.main-nav > ul > li:not(:last-child) {
+    margin-right: 45px;
+}
+
+.main-nav > ul > li > a {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+.main-nav > ul > li > a:hover {
+    color: blue;
+    transition: 0.5s all ease;
+}
+
+.hassubs > ul {
+    position: absolute;
+    visibility: hidden;
+    padding: 15px 25px 25px 25px;
+    transition: 0.2s all ease;
+    top: calc(100% + 20px);
+    left: -50%;
+}
+
+.hassubs:hover > ul {
+    visibility: visible;
+    z-index: 1000;
+    background: white;
+}
+
+.hassubs > ul > li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.hassubs > ul > li > a {
+    font-size: 14px;
+    font-weight: 600;
+    color: grey;
+}
+
+.hassubs > ul > li > a:hover {
+    color: blue;
+    transition: 0.5s all ease;
+}
+
+.header-extra {
+    display: inline-block;
+    margin-left: auto;
+}
+
+.account {
+    display: inline-block;
+}
+
+.account > a > svg {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.account > a:hover > svg {
+    color: blue;
+    transition: 0.5s all ease;
+}
+
+.account > a > div {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 12px;
+    color: black;
+}
+
+.account > ul {
+    display: none;
+}
+
+.account:hover > ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 25px 25px 25px;
+    z-index: 100;
+    background: white;
+    transition: 0.5s all ease;
+}
+
+.account > ul > li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.account > ul > li > a {
+    color: grey;
+    font-weight: 600;
+}
+
+.account > ul > li > a:hover {
+    color: blue;
+    transition: 0.5s all ease;
+}
+
+.shopping-cart {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.shopping-cart > a > svg {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.shopping-cart > a > div {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 12px;
+    color: black;
+}
+
+.account > a:hover > svg, .account > a:hover > div,
+.shopping-cart > a:hover > svg, .shopping-cart > a:hover > div {
+    fill: blue;
+    color: blue;
+    transition: 0.5s all ease;
+}
+
+.search {
+    display: inline-block;
+    margin-left: 50px;
+    vertical-align: middle;
+}
+
+.search-icon {
+    height: 15px;
+    width: 15px;
+}
+
+.search-icon:hover > svg {
+    fill: blue;
+    transition: 0.5s all ease;
+}
+
+.search-panel {
+    width: 100%;
+    background: #ececec;
+    z-index: -1;
+    position: absolute;
+    display: none;
+}
+
+.search-panel-content {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 70px;
+}
+
+.search-input {
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-style: italic; 
+}
+
+.search-input-btn {
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background: white;
+}
+
+.search-input-btn:hover {
+    background: black;
+    color: white;
+    transition: 0.5s all ease;
+}
+
+.hamburger {
+    display: none;
+    margin-left: 30px;
+    cursor: pointer;
+    margin-right: 4px;
+    transform: translateY(2px);
+    margin-left: 10px;
+}
+
+.hamburger > svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Menu. */
+.menu {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100vh;
+    z-index: 101;
+    background: white;
+}
+
+.menu.active {
+    right: 0;
+}
+
+.menu-container {
+    width: 100%;
+    height: 0px;
+    padding-top: 130px;
+}
+
+.menu.active .menu-container {
+    height: 500px;
+}
+
+.page-menu-content {
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow: hidden;
+    text-align: right;
+}
+
+.page-menu-search__input {
+    width: 100%;
+    height: 40px;
+    background: #FFFFFF;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+}
+
+.page-menu__item {
+    display: block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.page-menu-nav > li {
+    border-bottom: solid 1px black;
+}
+
+.page-menu__item > a {
+    display: block;
+    color: black;
+    font-weight: 600;
+    line-height: 50px;
+    height: 50px;
+    font-size: 16px;
+}
+
+.page-menu__item > a:hover {
+    color: blue;
+    transition: 0.5s all ease;
+}
+
+.page-menu__item.has-children > a {
+    display: inline-block;
+}
+
+.page-menu__selection {
+    display: none;
+    width: 100%;
+}
+
+.page-menu__selection.active {
+    display: block;
+}
+
+.page-menu__selection > li {
+    padding-right: 15px;
+    line-height: 40px;
+}
+
+.page-menu__selection > li:last-child {
+    padding-bottom: 20px;
+}
+
+.page-menu__selection > li > a {
+    color: black;
+    border-bottom: solid 1px black;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.page-menu__selection > li > a:hover {
+    color: blue;
+}
+
+.page-menu__selection > li:last-child > a {
+    border-bottom: none;
+}
+
+.menu-close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+}
+
+/* Account. */
+.account-login,
+.account-register {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.account-content {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 30%;
+    padding: 30px;
+}
+
+.modal__register__content,
+.modal__login__content {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 30%;
+    padding: 30px;
+}
+
+.account__phone, .account__password,
+.account__name, .account__surname,
+.account__email {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.account__phone > input, .account__name > input,
+.account__password > input, .account__surname > input,
+.account__email > input {
+    width: 100%;
+}
+
+.account__btn {
+    background: none;
+    display: block;
+    margin-top: 25px;
+}
+
+.account__btn:hover {
+    background: black;
+    color: white;
+    transition: 0.5s all ease;
+}
+
+.validation-summary-errors {
+    color: red;
+    margin-top: 10px;
+}
+
+/******************
+    Footer.
+******************/
+.footer {
+    width: 100%;
+    height: 130px;
+    margin-top: 80px;
+}
+
+.footer-background {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/home/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-content {
+    display: flex;
+    height: 130px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer.footer-static {
+    position: absolute;
+    bottom: 0;
+}

@@ -1,0 +1,369 @@
+﻿/* Popups. */
+.popups-container {
+    display: none;
+    position: fixed;
+    width: 50%;
+    height: 120px;
+    background: white;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 200;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.popups-container.active {
+    display: flex;
+}
+
+.details-popups-content {
+    display: flex;
+    width: 100%;
+    height: 100%;   
+    padding: 15px;
+}
+
+.popups__product__img {
+    height: 100%;
+    width: 11%;
+    margin-right: 20px;
+}
+
+.popups__product__img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.details-popups__text {
+    display: flex;
+    width: 79%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popups__heading {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.details-pupups__buttons {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+
+}
+
+.details-pupups__btn {
+    border: 2px solid black;
+} 
+
+.details-pupups__btn:hover {
+    background: black;
+    transition: 0.5s ease;
+}
+
+.details-pupups__btn:hover > a {
+    color: white;
+    transition: 0.5s ease;
+}
+
+.close-details-popups__btn {
+    font-size: 32px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+/* Product details. */
+.product-details {
+    width: 100%;
+    margin-top: 130px;
+}
+
+.details-swiper {
+    width: 500px;
+    height: 500px;
+}
+
+.details_swiper_position {
+    margin-left: unset !important;
+    margin-right: unset !important;
+}
+
+.swiper-slide > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.details-container {
+    display: flex;
+    width: 100%;
+}
+
+.details-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+.details__title {
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+.details__price {
+    font-size: 24px;
+    font-weight: 500;
+    padding-top: 100px;
+}
+
+.product-quantity-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    align-items: center;
+}
+
+.available-quantity-container {
+    display: flex;
+    color: #00c853;
+    margin-bottom: 15px;
+    width: 100%;
+    font-size: 15px;
+}
+
+.available-quantity__title {
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+.product-quantity__buttons {
+    display: flex;
+    width: 100%;
+}
+
+.quantity__input {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.add_cart_button {
+    border: 2px solid black;
+    padding: 12px;
+    background: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.add_cart_button:hover {
+    color: white;
+    background: black;
+    transition: 0.5s all ease;
+}
+
+.add_cart_button > a {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.details-tabs-container {
+    padding-top: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-bottom: 100px;
+}
+
+.tab-head {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.tab-head__item {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: grey;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.tab-head__item:first-child {
+    margin-left: 0;
+}
+
+.tab-content {
+    padding-top: 40px;
+}
+
+.tab-content__item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    font-size: 14px;
+    transform: translateX(100px);
+    padding: 50px;
+}
+
+.tab-content__item.active {
+    display: block;
+    position: static;
+    transform: translateX(0);
+    transition: 0.5s ease all;
+}
+
+.tab-head__item:hover,
+.tab-head__item.active {
+    color: black;
+    border-bottom: 1px solid black;
+    transition: 0.7s ease all;
+}
+
+.description__content {
+    color: grey;
+}
+
+.specification {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 100px;
+    color: grey;
+}
+
+.specification__value__container {
+    display: flex;
+}
+
+.specification__eng-unit {
+    padding-left: 5px;
+}
+
+/* Reviews */
+.reviews-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.reviews-result {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+}
+
+.reviews-result__rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating__value {
+    font-size: 20px;
+}
+
+.rating-star:before {
+    content: "★";
+    color: gold;
+    margin-left: 5px;
+    font-size: 25px;
+}
+
+.reviews__buttons {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.reviews__btn {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid black;
+}
+
+.reviews__btn > a {
+    padding: 5px 30px;
+}
+
+.reviews__btn:hover {
+    background: black;
+    transition: 0.5s ease;
+}
+
+.reviews__btn:hover > a {
+    color: white;
+    transition: 0.5s ease;
+}
+
+.reviews__items {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+}
+
+.reviews__item {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.usermark {
+    display: flex;
+    align-items: center;
+}
+
+.reviews__item__text {
+    word-break: break-all;
+}
+
+.reviews-count {
+    text-align: center;
+}
+
+/* Popups not authorized. */
+.popups-not-authorized {
+    display: none;
+}
+
+.popups-not-authorized.active {
+    background: #000000ad;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 1000;
+}
+
+.popups-not-authorized-content {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    padding: 20px;
+    width: 30%;
+    height: 100px;
+    transform: translate(-50%);
+    background: white;
+    border: 1px solid grey;
+}
+
+.popups-not-authorized__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}

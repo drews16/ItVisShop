@@ -1,0 +1,72 @@
+﻿@addTagHelper *, ItVisShop
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = Model.CurrentCategory;
+}
+
+<div class="ads-xl ads-products__xl">
+    <div class="container">
+        <div class="ads-xl-container">
+            <div class="ads-xl__background" style="background-image:url(/img/Products/category.jpg);"></div>
+            <div class="ads-products__title">@Model.CurrentCategory</div>
+        </div>
+    </div>
+</div>  
+
+<div class="container">
+    <div class="sorting-bar">
+        <div class="sorting-bar-content">
+            <select>
+                <option>По популярности</option>
+                <option>По возрастанию цены</option>
+                <option>По убыванию цены</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+
+<div class="products">
+    <div class="container">
+        <div class="products-container">
+            @foreach (var item in Model.Products)
+            {
+                <a class="product" asp-controller="Product" asp-action="Details" asp-route-id="@item.ProductId">
+                    <div class="product__image">
+                    <img src="@item.MainImage">
+                    </div>
+                    <div class="product__content">
+                        <div class="product__title">
+                            <h4>@item.Brand.BrandName @item.Model</h4>
+                        </div>
+                        <div class="product__price">@item.Price.ToString("c",  new System.Globalization.CultureInfo("ru-RU"))</div>
+                    </div>
+                </a>
+            }
+        </div>
+        <page-link-tag-helpers page-model="@Model.PageModel" page-action="Products" current-category="@Model.CurrentCategory"></page-link-tag-helpers>
+    </div>
+</div>
+
+<div class="icon-boxes">
+    <div class="container">
+        <div class="icon-boxes-container">
+            <div class="icon-box">
+                <div class="icon-box__image"><img src="~/img/home/icon_1.svg" /></div>
+                    <div class="icon-box__title">Бесплатная доставка</div>
+                    <div class="icon-box__text">Бесплатно доставим ваш товар по всей России</div>
+            </div>            
+            <div class="icon-box">
+                <div class="icon-box__image"><img src="~/img/home/icon_2.svg" /></div>
+                    <div class="icon-box__title">Бесплатный возврат</div>
+                    <div class="icon-box__text">Верните товар, если товар не подошел</div>
+            </div>
+            <div class="icon-box">
+                <div class="icon-box__image"><img src="~/img/home/icon_3.svg" /></div>
+                    <div class="icon-box__title">Поддержка 24/7</div>
+                    <div class="icon-box__text">Остались вопросы? Мы ответим вам в любое время</div>
+            </div>
+        </div>
+    </div>
+</div>

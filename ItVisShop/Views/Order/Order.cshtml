@@ -1,0 +1,122 @@
+﻿@if(User.Identity.IsAuthenticated)
+{
+        <div class="container">
+            <form method="post" asp-controller="Order" asp-action="Order">
+            <h1>Оформление заказа</h1>
+            <div class="order-content">
+                <div class="steps-block">
+                    <div class="delivery">
+                        <div class="delivery__heading">Адрес доставки</div>
+                        <div class="delivery-item">
+                            <div class="delivery__city">
+                                <label>Город доставки</label>
+                                    <select id="CityId" onchange="cityChange()" name="CityId" required>
+                                        <option selected disabled value="">Выберите город</option>
+                                        @foreach (var item in Model.Cities)
+                                        {
+                                            <option value="@item.CityId">@item.CityName</option>
+                                        }
+                                    </select>
+                            </div>
+                        </div>
+                        <div class="delivery-item">
+                            <div class="delivery__office">
+                                <label>Адрес пункта выдачи</label>
+                                <select id="OfficeId" disabled name="OfficeId">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="delivery__user-info">
+                        <div class="user-info__heading">Получатель заказа</div>
+                        <div class="user-info__item">
+                            <div class="user-info__name">
+                                <label>Имя</label>
+                                <input disabled value="@Model.User.Profile.Name"/>
+                            </div>
+                            <div class="user-info__surname">
+                                <label>Фамилия</label>
+                                <input disabled value="@Model.User.Profile.Surname"/>
+                            </div>
+                        </div>
+                        <div class="user-info__item">
+                            <div class="user-info__phone">
+                                <label>Телефон</label>
+                                <input disabled value="@Model.User.Profile.Phone" />
+                            </div>
+                            <div class="user-info__email">
+                                <label>Email</label>
+                                <input disabled value="@Model.User.Email" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-block">
+                    <div class="order-info">
+                        <div class="order-block__heading">
+                            <div class="order-block__title">Ваш заказ</div>
+                            <div class="order-block__link">
+                                <a asp-controller="Cart" asp-action="Cart">Перейти в корзину</a>
+                            </div>
+                        </div>
+                        <div class="summary-options">
+                            <div class="summary-product__option">
+                                <div class="summary-option__title">Товары:</div>
+                                <div class="summary-option__value">@Model.ProductCount</div>
+                            </div>                        
+                            <div class="summary-price__option">
+                                <div class="summary-option__title">Итого:</div>
+                                    <div class="summary-option__value"><span>@Model.TotalPrice.ToString("c", new System.Globalization.CultureInfo("ru-RU"))</span></div>
+                            </div>
+                        </div>
+                        <div class="summary-btns">
+                            <div class="summary__btn">
+                                <input class="apply-order__btn" type="submit" value="Подтвердить и оплатить" />
+                            </div>
+                        </div>
+                        <div class="summary-info">
+                            <div class="summary-text">
+                                Размещая заказ, вы соглашаетесь на обработку персональных данных в соответствии с 
+                                <span>Соглашением о конфиденциальности и Пользовательским соглашением</span> ItVisShop.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+}
+
+@section Scripts {
+    <script>
+        const officies = [
+        @foreach (var item in Model.Officies)
+        {
+            <text>[@item.OfficeId, @item.CityId, "@item.Street", "@item.Home"],</text>
+        }
+        ];
+
+        var cityList = document.getElementById("CityId");
+        var officeList=document.getElementById("OfficeId");
+
+        function cityChange()
+        {
+            var id = cityList.value;
+            while (officeList.options.length) {
+                officeList.options[0] = null;
+            }
+            for(const val of officies)
+            {
+                if(val[1]==id) {
+                    var option = document.createElement("option");
+                    option.value = val[0];
+                    option.text = val[2]+" "+val[3];
+                    officeList.appendChild(option);
+                }
+            }
+            officeList.disabled = false;
+        }
+    </script>
+}

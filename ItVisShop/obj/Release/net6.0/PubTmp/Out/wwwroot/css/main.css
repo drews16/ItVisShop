@@ -1,0 +1,743 @@
+/***************************
+    [Contents]
+    
+    1. Fonts
+    2. General styles
+    3. Header
+    4. Main
+        4.1 Ads
+        4.2 Products
+    5. Product property
+    6. Products
+
+
+***************************/
+
+/****************
+   1. Fonts.
+ ***************/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900');
+
+
+/*************************
+    2. General styles.
+*************************/
+
+:root {
+    --hover-color: blue;
+    --main-bgc: #e4e4e4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background: #FFFFFF;
+    color: black;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 2.14;
+    font-weight: 400
+}
+
+div {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+a, a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:active {
+    color: blue;
+}
+
+.show {
+    display: flex !important;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 0.75rem;
+    width: 100%;
+}
+
+/*****************
+    4. Main.
+*****************/
+.home-swiper {
+    width: 100%;
+    height: 800px;
+}
+
+.home_slider_container {
+    height: 100%;
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+}
+
+.home_slider_background {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home_slider_content_container {
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    left: 10%;
+}
+
+.home_slider_content {
+    max-width: 520px;
+}
+
+.home_slider_title {
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.home_slider_subtitle {
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 2;
+}
+
+.home_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 50px;
+    margin-top: 40px;
+    border: 2px solid white;
+    text-align: center;
+}
+
+.home_button > a {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 15px 29px;
+}
+
+.home_button:hover {
+    background: white;
+    transition: 0.7s all ease;
+}
+
+.home_button:hover > a {
+    color: black;
+    transition: 0.7s all ease;
+}
+
+.home-swiper-button-prev,
+.home-swiper-button-next {
+    cursor: pointer;
+    position: absolute;
+    color: blue;
+    font-size: 45px;
+    font-weight: 700;
+    top: 50%;
+    padding: 20px;
+}
+
+.home-swiper-button-prev {
+    margin-left: 100px;
+}
+
+.home-swiper-button-next {
+    right: 0;
+    margin-right: 100px;
+}
+
+.home-swiper-button-prev:hover,
+.home-swiper-button-next:hover {
+    background: grey;
+    color: blue;
+    transition: 0.5s all ease;
+}
+
+/*************** 
+    4.1 Ads. 
+***************/
+
+.ads_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    height: 490px;
+    padding: 0 60px;
+}
+
+.ads_title {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+
+.ads_link {
+    margin-top: 20px;
+    display: inline-block;
+    background: none;
+    padding: 10px 0;
+    border: 2px solid white;
+}
+
+.ads_link > a {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 50px;
+}
+
+.ads_link:hover {
+    background: white;
+    transition: 1s all ease;
+}
+
+.ads_link:hover > a {
+    color: black;
+    transition: 1s all ease;
+}
+
+/* Ads small */
+
+.ads_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ads_small {
+    width: calc(40% - 15px);
+    height: 100%;
+    padding: 30px;
+    position: relative;
+}
+
+.ads_small_inner {
+    position: inherit;
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+}
+
+.ads_small_content {
+    max-width: 250px;
+    padding-top: 55px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+/* Ads large */
+
+.ads_large {
+    height: 100%;
+    width: calc(60% - 15px);
+    position: relative;
+}
+
+.ads_large_inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-bottom: 45px;
+}
+
+.ads_large_content {
+    max-width: 560px;
+    height: 100%;
+    background: rgba(0,0,0,0.63);
+    padding-top: 50px;
+    padding-right: 130px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+.ads_large_text {
+    color: white;
+    font-size: 14px;
+}
+
+/*******************
+    4.2 Product.
+*******************/
+.products {
+    width: 100%;
+    padding: 60px;
+}
+
+.products-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.product {
+    display: flex;
+    width: calc((100% - 40px) / 4);
+    height: 400px;
+    margin-top: 20px;
+    flex-direction: column;
+    position: relative;
+}
+
+.product__image {
+    width: 100%;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product__sale {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 69px;
+    height: 36px;
+    left: 50px;
+    background: #e95a5a;
+    transform: rotate(90deg);
+    text-align: center;
+}
+
+.product__sale > span {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+.product__image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.product__content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.product__title > a {
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.product__price {
+    color: grey;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.product__title:hover > a {
+    color: blue;
+    transition: 0.5s all ease;
+}
+
+/**************
+    Ads xl. 
+**************/
+.ads_xl {
+    width: 100%;
+    height: 345px;
+    margin-bottom: 100px;
+}
+
+.ads__products__xl {
+    margin-bottom: 0;
+}
+
+.ads_xl_container {
+    width: 100%;
+    height: 345px;
+    position: relative;
+}
+
+.ads_xl_background {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ads_xl_content {
+    position: absolute;
+    top: 0;
+    right: 4%;
+    width: 400px;
+    height: 90%;
+    background: #e95a5a;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 30px;
+}
+
+.ads__products__title {
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+/*******************
+    Icon boxes.
+*******************/
+
+.icon-boxes {
+    width: 100%;
+    padding: 90px 0;
+}
+
+.icon-boxes-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-box {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.icon-box__image {
+    width: 75px;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon-box__image > img {
+    max-width: 100%;
+}
+
+.icon-box__title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.icon-box__text {
+    font-size: 14px;
+    color: grey;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/*****************
+    Newsletter
+*****************/
+.newsletter {
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.newsletter__border {
+    width: 100%;
+    border-top: 2px solid #e3e3e3;
+}
+
+.newsletter__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 90px;
+}
+
+.newsletter__content__title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.newsletter__content__text {
+    color: grey;
+    margin-top: 10px;
+}
+
+.newsletter__content__form {
+    margin-top: 40px;
+    width: 50%;
+}
+
+.newsletter__input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid grey;
+    outline: none;
+    text-align: center;
+}
+
+.newsletter__button {
+    width: 160px;
+    height: 40px;
+    margin-top: 50px;
+    background: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newsletter__button:hover {
+    background: black;
+    color: white;
+    transition: 0.7s ease all;
+}
+
+/****************************
+    5. Details.
+****************************/
+.product_details {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.details_swiper {
+    width: 500px;
+    height: 500px;
+}
+
+.details_swiper_position {
+    margin-left: unset !important;
+    margin-right: unset !important;
+}
+
+.swiper-slide > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.details_container {
+    display: flex;
+    width: 100%;
+}
+
+.details_content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+.details_title {
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+.details_price {
+    font-size: 24px;
+    font-weight: 500;
+    padding-top: 100px;
+}
+
+.product_quantity_container {
+    display: flex;
+    padding-top: 60px;
+}
+
+.quantity__input {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    outline: none;
+    border: 1px solid black;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.add_cart_button {
+    border: 2px solid black;
+    margin-left: auto;
+    padding: 12px;
+    background: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.add_cart_button:hover {
+    color: white;
+    background: black;
+    transition: 0.5s all ease;
+}
+
+.add_cart_button > a {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.details-tabs-container {
+    padding-top: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-bottom: 100px;
+}
+
+.tab-head {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.tab-head__item {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: grey;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.tab-head__item:first-child {
+    margin-left: 0;
+}
+
+.tab-content {
+    padding-top: 40px;
+}
+
+.tab-content__item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    font-size: 14px;
+    transform: translateX(100px);
+    padding: 50px;
+}
+
+.tab-content__item.active {
+    display: block;
+    position: static;
+    transform: translateX(0);
+    transition: 0.5s ease all;
+}
+
+.tab-head__item:hover,
+.tab-head__item.active {
+    color: black;
+    border-bottom: 1px solid black;
+    transition: 0.7s ease all;
+}
+
+.description__content {
+    color: grey;
+}
+
+.specification {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 100px;
+    color: grey;
+}
+
+.specification__value__container {
+    display: flex;
+}
+
+.specification__eng-unit {
+    padding-left: 5px;
+}
+
+/***********************
+    6. Products
+***********************/
+
+.pagination {
+    display: flex;
+    color: black;
+    justify-content: flex-start;
+    margin: 15px;
+}
+
+.pagination > li > a {
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.pagination > li > a:hover {
+    color: blue;
+    transition: 0.5s all ease;
+}
+
+.pagination > .page__active {
+    color: blue;
+}
+
+/******************
+    Footer.
+******************/
+.footer {
+    width: 100%;
+    height: 130px;
+}
+
+.footer-background {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/home/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-content {
+    display: flex;
+    height: 130px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

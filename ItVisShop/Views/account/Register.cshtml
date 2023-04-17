@@ -1,0 +1,55 @@
+﻿<div class="account-register">
+    <div class="account-content">
+        <h2 class="h2">Регистрация</h2>
+        <form method="post" asp-controller="Account" asp-action="Register">
+            @if (Model == null)
+            {
+                <div class="account__name">
+                    <label>Имя</label>
+                    <input type="text" name="Name" required />
+                </div>
+                <div class="account__surname">
+                    <label>Фамилия</label>
+                    <input type="text" name="Surname" required />
+                </div>
+                <div class="account__email">
+                    <label>Email</label>
+                    <input type="text" name="Email" required />
+                </div>
+                <div class="account__phone">
+                    <label>Номер телефона</label>
+                    <input type="text" name="Phone" required />
+                </div>
+            } 
+            else
+            {
+                <div class="account__name">
+                    <label>Имя</label>
+                    <input type="text" name="Name" required  value="@Model.Name"/>
+                </div>
+                <div class="account__surname">
+                    <label>Фамилия</label>
+                    <input type="text" name="Surname" required value="@Model.Surname"/>
+                </div>
+                <div class="account__email">
+                    <label>Email</label>
+                    <input type="text" name="Email" required  value="@Model.Email"/>
+                </div>
+                <div class="account__phone">
+                    <label>Номер телефона</label>
+                    <input type="text" name="Phone" required value="@Model.Phone"/>
+                </div>
+            }
+            <div class="account__password">
+                <label>Пароль</label>
+                <input type="password" name="Password" required />
+            </div>
+            <div class="account__password">
+                <label>Подтвердите пароль</label>
+                <input type="password" name="PasswordConfirm" required />
+            </div>
+            <input type="submit" value="Зарегистрироваться" class="action-link account__btn" />
+            <div asp-validation-summary="All"></div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,379 @@
+﻿.home-swiper {
+    width: 100%;
+    height: 800px;
+}
+
+.home-slider-container {
+    height: 100%;
+    width: 100%;
+    padding-top: 130px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+}
+
+.home-slider__background {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.home-slider-content-container {
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    left: 10%;
+}
+
+.home-slider-content {
+    max-width: 520px;
+}
+
+.home-slider__title {
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.home-slider__subtitle {
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 2;
+}
+
+.home-slider__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 50px;
+    margin-top: 40px;
+    border: 2px solid white;
+    text-align: center;
+}
+
+.home-slider__btn > a {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 15px 29px;
+}
+
+.home-slider__btn:hover {
+    background: white;
+    transition: 0.7s all ease;
+}
+
+.home-slider__btn:hover > a {
+    color: black;
+    transition: 0.7s all ease;
+}
+
+.home-swiper-button-prev,
+.home-swiper-button-next {
+    cursor: pointer;
+    position: absolute;
+    color: blue;
+    font-size: 45px;
+    font-weight: 700;
+    top: 60% !important;
+    padding: 20px;
+}
+
+.home-swiper-button-prev {
+    margin-left: 100px;
+}
+
+.home-swiper-button-next {
+    right: 0;
+    margin-right: 100px;
+}
+
+.home-swiper-button-prev:hover,
+.home-swiper-button-next:hover {
+    background: grey;
+    color: blue;
+    transition: 0.5s all ease;
+}
+
+/*************** 
+    Ads. 
+***************/
+
+.ads-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    height: 490px;
+    padding: 0 60px;
+}
+
+.ads__title {
+    font-size: 45px;
+    font-weight: 600;
+    color: white;
+}
+
+.ads__link {
+    margin-top: 20px;
+    display: inline-block;
+    background: none;
+    padding: 10px 0;
+    border: 2px solid white;
+}
+
+.ads__link > a {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 50px;
+}
+
+.ads__link:hover {
+    background: white;
+    transition: 1s all ease;
+}
+
+.ads__link:hover > a {
+    color: black;
+    transition: 1s all ease;
+}
+
+/*****************
+    Ads small
+*****************/
+
+.ads__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ads-small {
+    width: calc(40% - 15px);
+    height: 100%;
+    padding: 30px;
+    position: relative;
+}
+
+.ads-small__inner {
+    position: inherit;
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+}
+
+.ads-small-content {
+    max-width: 250px;
+    padding-top: 55px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+/*****************
+    Ads large 
+******************/
+
+.ads-large {
+    height: 100%;
+    width: calc(60% - 15px);
+    position: relative;
+}
+
+.ads-large__inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-bottom: 45px;
+}
+
+.ads-large-content {
+    max-width: 560px;
+    height: 100%;
+    background: rgba(0,0,0,0.63);
+    padding-top: 50px;
+    padding-right: 130px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+.ads-large__text {
+    color: white;
+    font-size: 14px;
+}
+
+.ads_xl {
+    width: 100%;
+    height: 345px;
+    margin-bottom: 100px;
+}
+
+/***************
+    Ads Xl.
+***************/
+.ads__products__xl {
+    margin-bottom: 0;
+}
+
+.ads-xl-container {
+    width: 100%;
+    height: 260px;
+    position: relative;
+    padding-top: 35px;
+    padding-right: 35px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+
+.ads-xl__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ads-xl-content {
+    position: absolute;
+    top: 0;
+    right: 4%;
+    width: 400px;
+    height: 90%;
+    background: #e95a5a;
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-right: 30px;
+}
+
+.ads__products__title {
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+/*******************
+    Icon boxes.
+*******************/
+
+.icon-boxes {
+    width: 100%;
+    padding: 90px 0;
+}
+
+.icon-boxes-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-box {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.icon-box__image {
+    width: 75px;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .icon-box__image > img {
+        max-width: 100%;
+    }
+
+.icon-box__title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.icon-box__text {
+    font-size: 14px;
+    color: grey;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/*****************
+    Newsletter
+*****************/
+.newsletter {
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.newsletter-border {
+    width: 100%;
+    border-top: 2px solid #e3e3e3;
+}
+
+.newsletter-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 90px;
+}
+
+.newsletter-content__title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.newsletter-content__text {
+    color: grey;
+    margin-top: 10px;
+}
+
+.newsletter-content__form {
+    margin-top: 40px;
+    width: 50%;
+}
+
+.newsletter__input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid grey;
+    outline: none;
+    text-align: center;
+}
+
+.newsletter__btn {
+    width: 160px;
+    height: 40px;
+    margin-top: 50px;
+    background: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newsletter__btn:hover {
+    background: black;
+    color: white;
+    transition: 0.7s ease all;
+}

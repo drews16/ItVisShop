@@ -1,0 +1,147 @@
+﻿@model IEnumerable<Product>
+@{
+    ViewData["Title"] = "Главная";
+}
+
+@* Home slider. *@
+<div class="swiper home-swiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide home-slider-container">
+            <div class="home-slider__background" style="background-image: url(../img/home/slider/home_slider_1.jpg)"></div>
+            <div class="home-slider-content-container">
+                <div class="container">
+                    <div class="home-slider-content">
+                        <div class="home-slider__title">Мы запустились!</div>
+                        <div class="home-slider__subtitle">Попробуй заказть у нас и почувствуй мощь.</div>
+                        <div class="home-slider__btn"><a asp-controller="Product" asp-action="Products" asp-route-category="Смартфон">За покупками</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide home-slider-container">
+            <div class="home-slider__background" style="background-image: url(../img/home/slider/home_slider_3.jpg)"></div>
+            <div class="home-slider-content-container">
+                <div class="container">
+                    <div class="home-slider-content">
+                        <div class="home-slider__title">Совершенно новый!</div>
+                        <div class="home-slider__subtitle">Только лучшие гаджеты.</div>
+                        <div class="home-slider__btn"><a asp-controller="Product" asp-action="Products" asp-route-category="Смартфон">За покупками</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-button-prev home-swiper-button-prev"></div>
+    <div class="swiper-button-next home-swiper-button-next"></div>
+</div>
+
+
+@* Ads. *@
+<div class="ads-container">
+    <div class="ads-small">
+        <div class="ads__background" style="background-image:url(../img/home/avds_small.jpg);"></div>
+        <div class="ads-small__inner">
+            <div class="ads-small-content">
+                <div class="ads__title">Смартфоны</div>
+                <div class="ads__link"><a asp-controller="Product" asp-action="Products" asp-route-category="Смартфон">Перейти</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ads-large">
+        <div class="ads__background" style="background-image:url(../img/home/avds_large.jpg);"></div>
+        <div class="ads-large__inner">
+            <div class="ads-large-content">
+                <div class="ads__title">Аксессуары</div>
+                <div class="ads-large__text">
+                    Самые лучшие и надежные аксуссуары только у нас!
+                </div>
+                <div class="ads__link"><a asp-controller="#" asp-action="#">Перейти</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* Top products. *@
+<div class="products">
+    <div class="container">
+        <div class="products-container">
+            @foreach(var item in Model)
+            {
+                <a class="product" asp-controller="Product" asp-action="Details" asp-route-id="@item.ProductId" >
+                    <div class="product__image">
+                        <img src="@item.MainImage" />
+                    </div>
+                    <div class="product-extra product__hot"><span>Hot</span></div>
+                    <div class="product-content">
+                        <div class="product__title">@item.Brand.BrandName @item.Model</div>
+                        <div class="product__price">@item.Price.ToString("c",  new System.Globalization.CultureInfo("ru-RU"))</div>
+                    </div>
+                </a>
+            }
+        </div>
+    </div>
+</div>
+
+@* Ads Xl *@
+<div class="ads-xl">
+    <div class="container">
+        <div class="ads-xl-container">
+            <div class="ads-xl__background" style="background-image:url(../img/home/avds_xl.jpg);"></div>
+            <div class="ads-xl-content">
+                <div class="ads__title">Нереальные гаджеты</div>
+                <div class="ads__link"><a asp-controller="#" asp-action="#">Перейти</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* Icon boxes *@
+<div class="icon-boxes">
+    <div class="container">
+        <div class="icon-boxes-container">
+            <div class="icon-box">
+                <div class="icon-box__image"><img src="~/img/home/icon_1.svg" /></div>
+                <div class="icon-box__title">Бесплатная доставка</div>
+                <div class="icon-box__text">Бесплатно доставим ваш товар по всей России</div>
+            </div>            
+            <div class="icon-box">
+                <div class="icon-box__image"><img src="~/img/home/icon_2.svg" /></div>
+                <div class="icon-box__title">Бесплатный возврат</div>
+                <div class="icon-box__text">Верните товар, если товар не подошел</div>
+            </div>
+            <div class="icon-box">
+                <div class="icon-box__image"><img src="~/img/home/icon_3.svg" /></div>
+                <div class="icon-box__title">Поддержка 24/7</div>
+                <div class="icon-box__text">Остались вопросы? Мы ответим вам в любое время</div>
+            </div>
+        </div>
+    </div> 
+</div>
+
+@* Newsletter *@
+<div class="newsletter">
+    <div class="container">
+        <div class="newsletter-border"></div>
+        <div class="newsletter-content">
+            <div class="newsletter-content__title">
+                Подписывайтесь на наши рассылки
+            </div>
+            <div class="newsletter-content__text">
+                Подпишитесь на рассылки, чтобы узнавать об акция первым
+            </div>
+            <div class="newsletter-content__form">
+                <form method="post">
+                    <input class="newsletter__input" type="email" />
+                    <button class="newsletter__btn" type="submit">Подписаться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="/js/index.js"></script>
+}
